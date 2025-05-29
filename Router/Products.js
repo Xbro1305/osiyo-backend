@@ -31,14 +31,16 @@ prt.post("/create", [ValidateAdmin.check], async (req, res) => {
 prt.get("/", async (req, res) => {
   try {
     const filter = { ...req.query };
-
+    
     const data = await productDB.find(filter);
-
-    if (data.length > 0) {
+    
+    const { length } = req.body;
+    const limitedData = length ? data.slice(0, Number(length)) : data;
+    if (limitedData.length > 0) {
       res.status(200).json({
         msg: "Products found successfully",
         variant: "success",
-        innerData: data,
+        innerData: limitedData,
       });
     } else {
       res.status(404).json({

@@ -37,11 +37,13 @@ categoryRT.get("/", async (req, res) => {
 
     const data = await categoryDB.find(filter);
 
-    if (data.length > 0) {
+    const { length } = req.body;
+    const limitedData = length ? data.slice(0, Number(length)) : data;
+    if (limitedData.length > 0) {
       res.status(200).json({
         msg: "Categories found successfully",
         variant: "success",
-        innerData: data,
+        innerData: limitedData,
       });
     } else {
       res.status(404).json({
