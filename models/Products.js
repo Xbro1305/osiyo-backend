@@ -1,8 +1,8 @@
-const { model, Schema } = require("mongoose");
+const { Schema, model } = require("mongoose");
 
-const schema = new Schema({
+const ProductSchema = new Schema({
   name: { type: String },
-  img: { type: Array, of: String },
+  img: { type: [String] },
   type: { type: Number },
   size: { type: String },
   width: { type: String },
@@ -16,5 +16,36 @@ const schema = new Schema({
   madein: { type: Object },
 });
 
-const productDB = model("Products", schema);
+// Кастомный валидатор
+ProductSchema.pre("validate", function (next) {
+  const doc = this;
+
+  if (doc.type === 0) {
+    if (doc.weight == null || doc.width == null) {
+      return next(new Error("Для type = 0 обязательны поля: weight и width"));
+    }
+  }
+
+  if (doc.type === 1) {
+    const requiredFields = [
+      "pillowcaseSize",
+      "pillowcases",
+      "size",
+      "name",
+      "bedsheetSize",
+      "duvetCoverSize",
+      "madein",
+    ];
+
+    for (let field of requiredFields) {
+      if (doc[field] == null) {
+        return next(new Error(`Для type = 1 обязательное поле: ${field}`));
+      }
+    }
+  }
+
+  next();
+});
+
+const productDB = model("Products", ProductSchema);
 module.exports = productDB;
