@@ -13,7 +13,7 @@ const ProductSchema = new Schema({
   pillowcases: { type: String },
   bedsheetSize: { type: String },
   pillowcaseSize: { type: String },
-  madein: { type: Object },
+  cloth: { type: String },
 });
 
 // Кастомный валидатор

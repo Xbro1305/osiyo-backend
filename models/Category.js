@@ -2,6 +2,7 @@ const { model, Schema } = require("mongoose");
 
 const categorySchema = new Schema({
   name: { type: String, required: true },
+  keyword: { type: String, required: true },
   preview: { type: String, required: true },
   applies_to: {
     type: Number,
