@@ -99,22 +99,71 @@ prt.get("/", async (req, res) => {
   }
 });
 
-prt.patch("/update/:id", [ValidateAdmin.check], async (req, res) => {
-  try {
-    const id = req.params.id;
-    const incoming = req.body;
-    const updated = await productDB.findByIdAndUpdate(id, incoming);
-    res.status(200).json({
-      msg: "Product updated successfully",
-      variant: "success",
-      updated,
-    });
-  } catch (err) {
-    res
-      .status(400)
-      .json({ msg: "Something went wrong", variant: "error", err });
+prt.patch(
+  "/update/:id",
+  [ValidateAdmin.check, upload.array("images", 10)],
+  async (req, res) => {
+    try {
+      const id = req.params.id;
+      const incoming = req.body;
+
+      const product = await productDB.findById(id);
+      if (!product) {
+        return res.status(404).json({
+          msg: "Product not found",
+          variant: "error",
+        });
+      }
+
+      // If new images are provided, replace old ones
+      let imagePaths = product.img;
+
+      if (req.files && req.files.length > 0) {
+        // Удалить старые изображения
+        for (const oldPath of product.img || []) {
+          const fullPath = path.join(__dirname, "..", oldPath);
+          if (fs.existsSync(fullPath)) fs.unlinkSync(fullPath);
+        }
+
+        // Переместить новые изображения
+        const finalDir = path.join("uploads");
+        fs.mkdirSync(finalDir, { recursive: true });
+
+        imagePaths = [];
+
+        for (const file of req.files) {
+          const oldPath = file.path;
+          const newPath = path.join(finalDir, file.filename);
+          fs.renameSync(oldPath, newPath);
+          imagePaths.push("/" + newPath.replace(/\\/g, "/"));
+        }
+      }
+
+      const updated = await productDB.findByIdAndUpdate(
+        id,
+        {
+          ...incoming,
+          img: imagePaths,
+        },
+        { new: true }
+      );
+
+      res.status(200).json({
+        msg: "Product updated successfully",
+        variant: "success",
+        updated,
+      });
+    } catch (err) {
+      console.error("Error updating product:", err);
+      res.status(400).json({
+        msg: "Something went wrong",
+        variant: "error",
+        err,
+      });
+    }
   }
-});
+);
+
 
 prt.delete("/delete/:id", [ValidateAdmin.check], async (req, res) => {
   try {
