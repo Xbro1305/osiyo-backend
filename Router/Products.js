@@ -164,7 +164,6 @@ prt.patch(
   }
 );
 
-
 prt.delete("/delete/:id", [ValidateAdmin.check], async (req, res) => {
   try {
     const id = req.params.id;
