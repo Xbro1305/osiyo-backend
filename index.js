@@ -15,9 +15,13 @@ mongoose
   .then(() => console.log("Connected to MongoDB"))
   .catch(() => console.log("Error connecting"));
 
+app.use("/uploads", express.static("uploads"));
+
 app.use("/users", rt);
 app.use("/categories", categoryRT);
 app.use("/products", prt);
-app.get("/", async (req, res) => {res.send("Упс... Вы попали не туда")});
+app.get("/", async (req, res) => {
+  res.send("Упс... Вы попали не туда");
+});
 
 app.listen(8080, () => console.log("App started!"));

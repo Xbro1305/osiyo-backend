@@ -6,7 +6,7 @@ const ProductSchema = new Schema({
   type: { type: Number },
   size: { type: String },
   width: { type: String },
-  categoryId: { type: Number, required: true },
+  categoryId: { type: String, required: true },
   article: { type: Number },
   weight: { type: Number },
   duvetCoverSize: { type: String },
@@ -34,7 +34,6 @@ ProductSchema.pre("validate", function (next) {
       "name",
       "bedsheetSize",
       "duvetCoverSize",
-      "madein",
     ];
 
     for (let field of requiredFields) {
