@@ -6,7 +6,16 @@ const { default: mongoose } = require("mongoose");
 const categoryRT = require("./Router/Category");
 require("dotenv").config();
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://osiyohometex.uz",
+      "http://localhost:3000",
+    ], // укажи нужные домены
+    credentials: true, // если используешь cookies
+  })
+);
 app.use(express.json({ limit: "30mb" }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 
