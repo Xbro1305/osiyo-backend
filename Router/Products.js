@@ -8,7 +8,7 @@ const prt = Router();
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    const tempPath = "public/uploads/temp";
+    const tempPath = "uploads/temp";
     fs.mkdirSync(tempPath, { recursive: true });
     cb(null, tempPath);
   },
@@ -35,7 +35,7 @@ prt.post(
       const newArticle =
         lastProduct && lastProduct.article ? lastProduct.article + 1 : 1;
 
-      const finalDir = path.join("public/uploads");
+      const finalDir = path.join("uploads");
       fs.mkdirSync(finalDir, { recursive: true });
 
       const imagePaths = [];
@@ -44,7 +44,7 @@ prt.post(
         const oldPath = file.path;
         const newPath = path.join(finalDir, file.filename);
         fs.renameSync(oldPath, newPath);
-        imagePaths.push(newPath.split("public").replace(/\\/g, "/"));
+        imagePaths.push("/" + newPath.replace(/\\/g, "/"));
       }
 
       const created = await productDB.create({
