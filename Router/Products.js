@@ -23,6 +23,7 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage });
+
 prt.post(
   "/create",
   [ValidateAdmin.check, upload.array("images", 10)],
