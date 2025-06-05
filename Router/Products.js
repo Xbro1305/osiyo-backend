@@ -71,11 +71,11 @@ prt.post(
 );
 prt.get("/", async (req, res) => {
   try {
-    const { type } = req.query;
+    const { type } = req?.query;
 
     const data = await productDB.find({ type });
 
-    const { length } = req.query;
+    const { length } = req?.query;
     const limitedData = length ? data.slice(0, Number(length)) : data;
     if (limitedData.length > 0) {
       res.status(200).json({
