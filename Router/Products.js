@@ -70,13 +70,17 @@ prt.post(
   }
 );
 prt.get("/", async (req, res) => {
+  const { type, length, categoryId } = req?.query;
+
+  const filter = {};
+  if (type) filter.type = type;
+  if (categoryId) filter.categoryId = categoryId;
+
   try {
-    const { type } = req?.query;
+    const data = await productDB.find(filter);
 
-    const data = await productDB.find({ type });
-
-    const { length } = req?.query;
     const limitedData = length ? data.slice(0, Number(length)) : data;
+
     if (limitedData.length > 0) {
       res.status(200).json({
         msg: "Products found successfully",
