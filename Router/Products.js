@@ -70,11 +70,12 @@ prt.post(
   }
 );
 prt.get("/", async (req, res) => {
-  const { type, length, categoryId } = req?.query;
+  const { type, length, categoryId, article } = req?.query;
 
   const filter = {};
   if (type) filter.type = type;
   if (categoryId) filter.categoryId = categoryId;
+  if (article) filter.article = article;
 
   try {
     const data = await productDB.find(filter);
