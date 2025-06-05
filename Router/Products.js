@@ -73,7 +73,7 @@ prt.get("/", async (req, res) => {
   try {
     const { type } = req.query;
 
-    const data = await productDB.find(type);
+    const data = await productDB.find({ type });
 
     const { length } = req.query;
     const limitedData = length ? data.slice(0, Number(length)) : data;
