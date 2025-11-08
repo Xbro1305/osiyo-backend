@@ -3,3 +3,8 @@
 [2025-11-08T08:57:40.325Z] [LOG] 🚀 Server started on port 8080
 [2025-11-08T08:57:51.153Z] [LOG] 🚀 Server started on port 8080
 [2025-11-08T08:57:53.599Z] [LOG] ✅ Connected to MongoDB
+[2025-11-08T08:58:43.996Z] [LOG] 🚀 Server started on port 8080
+[2025-11-08T08:58:43.998Z] [ERROR] ❌ MongoDB connection error: {}
+[2025-11-08T08:58:43.999Z] [ERROR] ❌ Mongoose runtime error: {}
+[2025-11-08T08:59:12.623Z] [LOG] 🚀 Server started on port 8080
+[2025-11-08T08:59:15.763Z] [LOG] ✅ Connected to MongoDB
