@@ -3,7 +3,7 @@ const cors = require("cors");
 const fs = require("fs");
 const path = require("path");
 const morgan = require("morgan");
-const { default: mongoose } = require("mongoose");
+const mongoose = require("mongoose");
 require("dotenv").config();
 
 const rt = require("./Router/Router");
@@ -13,15 +13,10 @@ const categoryRT = require("./Router/Category");
 const app = express();
 
 // === 📁 Логирование ===
-
-// Папка и файл для логов
 const logDirectory = path.join(__dirname, "logs");
-if (!fs.existsSync(logDirectory)) {
+if (!fs.existsSync(logDirectory))
   fs.mkdirSync(logDirectory, { recursive: true });
-}
 const logFilePath = path.join(logDirectory, "server.log");
-
-// Создаем поток для записи
 const logStream = fs.createWriteStream(logFilePath, { flags: "a" });
 
 // Переопределяем console.* чтобы всё дублировалось в файл
@@ -36,7 +31,7 @@ const logStream = fs.createWriteStream(logFilePath, { flags: "a" });
   };
 });
 
-// === HTTP-запросы (через morgan) ===
+// === HTTP-запросы через morgan ===
 app.use(
   morgan("combined", {
     stream: {
@@ -56,6 +51,7 @@ app.use(
       "https://osiyohometex.uz",
       "https://www.osiyohometex.uz",
     ],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     credentials: true,
   })
 );
@@ -83,15 +79,17 @@ app.use("/users", rt);
 app.use("/categories", categoryRT);
 app.use("/products", prt);
 
-// === Обработчик ошибок Express ===
-app.use((err, req, res, next) => {
-  console.error("❌ Express error:", err);
-  res.status(500).json({ message: "Internal Server Error" });
-});
-
 // === Главная страница ===
 app.get("/", (req, res) => {
   res.send("Упс... Вы попали не туда 😅");
+});
+
+// === Обработчик ошибок Express (глобальный) ===
+app.use((err, req, res, next) => {
+  console.error("❌ Express error:", err);
+  res
+    .status(500)
+    .json({ message: "Internal Server Error", error: err?.message || err });
 });
 
 // === Запуск сервера ===
