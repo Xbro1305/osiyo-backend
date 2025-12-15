@@ -62,6 +62,7 @@ app.use(
       "http://localhost:3000",
       "https://osiyohometex.uz",
       "https://www.osiyohometex.uz",
+      "https://printing.osiyohometex.uz",
     ],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     credentials: true,
