@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const productDB = require("../models/Products");
-const { ValidateAdmin } = require("../middleware/admin");
+const { ValidateAdmin } = require("../middleware/checkAdmin");
 const multer = require("multer");
 const fs = require("fs");
 const path = require("path");
@@ -8,9 +8,9 @@ const prt = Router();
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    const tempPath = "uploads/temp";
-    fs.mkdirSync(tempPath, { recursive: true });
-    cb(null, tempPath);
+    const uploadDir = "uploads/products";
+    fs.mkdirSync(uploadDir, { recursive: true });
+    cb(null, uploadDir);
   },
   filename: (req, file, cb) => {
     const uniqueName =
@@ -35,7 +35,7 @@ prt.post(
       const newArticle =
         lastProduct && lastProduct.article ? lastProduct.article + 1 : 1;
 
-      const finalDir = path.join("uploads");
+      const finalDir = path.join("uploads/products");
       fs.mkdirSync(finalDir, { recursive: true });
 
       const imagePaths = [];
@@ -131,7 +131,7 @@ prt.patch(
         }
 
         // Переместить новые изображения
-        const finalDir = path.join("uploads");
+        const finalDir = path.join("uploads/products");
         fs.mkdirSync(finalDir, { recursive: true });
 
         imagePaths = [];

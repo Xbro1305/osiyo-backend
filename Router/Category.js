@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const categoryDB = require("../models/Category");
-const { ValidateAdmin } = require("../middleware/admin");
+const { ValidateAdmin } = require("../middleware/checkAdmin");
 const categoryRT = Router();
 
 categoryRT.post("/create", [ValidateAdmin.check], async (req, res) => {

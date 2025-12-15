@@ -1,14 +1,23 @@
 const express = require("express");
 const cors = require("cors");
+const os = require("os");
 const fs = require("fs");
 const path = require("path");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const rt = require("./Router/Router");
-const prt = require("./Router/Products");
+const usersRT = require("./Router/Users");
+const productRT = require("./Router/Products");
+const paintingRT = require("./Router/Printing/Painting");
 const categoryRT = require("./Router/Category");
+const actionsRT = require("./Router/Warehouse/Actions");
+const designsRT = require("./Router/Warehouse/Designs");
+const stockRT = require("./Router/Warehouse/StockHistory");
+const gazapalRT = require("./Router/Printing/Gazapal");
+const whiteningRT = require("./Router/Printing/Whitening");
+const ramRT = require("./Router/Printing/Ram");
+const clothesRT = require("./Router/Printing/Clothes");
 
 const app = express();
 
@@ -48,6 +57,9 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
+      "http://192.168.0.111:3000",
+      "http://192.168.1.110:3000",
+      "http://localhost:3000",
       "https://osiyohometex.uz",
       "https://www.osiyohometex.uz",
     ],
@@ -75,14 +87,31 @@ mongoose.connection.on("error", (err) => {
 app.use("/uploads", express.static("uploads"));
 
 // === Роуты ===
-app.use("/users", rt);
+app.use("/users", usersRT);
 app.use("/categories", categoryRT);
-app.use("/products", prt);
+app.use("/actions", actionsRT);
+app.use("/products", productRT);
+app.use("/designs/stock", stockRT);
+app.use("/designs", designsRT);
+app.use("/printing/gazapal", gazapalRT);
+app.use("/printing/whitening", whiteningRT);
+app.use("/printing/clothes", clothesRT);
+app.use("/printing/painting", paintingRT);
+app.use("/printing/ram", ramRT);
 
 // === Главная страница ===
 app.get("/", (req, res) => {
   res.send("Упс... Вы попали не туда 😅");
 });
+
+function getLocalIP() {
+  const interfaces = os.networkInterfaces();
+  for (const name of Object.keys(interfaces)) {
+    for (const intf of interfaces[name]) {
+      if (intf.family === "IPv4" && !intf.internal) return intf.address;
+    }
+  }
+}
 
 // === Обработчик ошибок Express (глобальный) ===
 app.use((err, req, res, next) => {
@@ -94,7 +123,9 @@ app.use((err, req, res, next) => {
 
 // === Запуск сервера ===
 const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => console.log(`🚀 Server started on port ${PORT}`));
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running at http://${getLocalIP()}:${PORT}`);
+});
 
 // === Глобальные ошибки Node.js ===
 process.on("uncaughtException", (err) => {
