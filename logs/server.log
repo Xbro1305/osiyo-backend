@@ -1,2 +1,31 @@
 [2025-12-15T13:20:52.645Z] [LOG] Server running at http://192.168.0.111:8080
 [2025-12-15T13:20:54.646Z] [LOG] Server running at http://192.168.0.111:8080
+[2025-12-15T13:20:57.048Z] [LOG] ✅ Connected to MongoDB
+127.0.0.1 - - [15/Dec/2025:13:41:31 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:41:31 +0000] "GET /printing/ram HTTP/1.1" 200 629 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:41:31 +0000] "GET /users/getme HTTP/1.1" 200 187 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:41:31 +0000] "GET /printing/gazapal HTTP/1.1" 200 413 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:47:15 +0000] "OPTIONS /users/signin HTTP/1.1" 204 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:47:16 +0000] "POST /users/signin HTTP/1.1" 200 676 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:47:18 +0000] "OPTIONS /designs HTTP/1.1" 204 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:47:18 +0000] "OPTIONS /designs?article= HTTP/1.1" 204 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:47:18 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:47:18 +0000] "GET /actions HTTP/1.1" 404 57 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:47:18 +0000] "GET /users/getme HTTP/1.1" 200 187 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:47:18 +0000] "GET /designs HTTP/1.1" 200 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:47:18 +0000] "GET /designs?article= HTTP/1.1" 200 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:47:23 +0000] "OPTIONS /designs HTTP/1.1" 204 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:47:23 +0000] "OPTIONS /designs?article= HTTP/1.1" 204 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:47:23 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:47:24 +0000] "GET /designs?article= HTTP/1.1" 200 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:47:24 +0000] "GET /actions HTTP/1.1" 404 57 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:47:24 +0000] "GET /designs HTTP/1.1" 200 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+127.0.0.1 - - [15/Dec/2025:13:47:24 +0000] "GET /users/getme HTTP/1.1" 200 187 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+[2025-12-15T13:52:28.203Z] [LOG] Server running at http://192.168.0.111:8080
+[2025-12-15T13:52:28.566Z] [LOG] Server running at http://192.168.0.111:8080
+[2025-12-15T13:52:31.233Z] [LOG] ✅ Connected to MongoDB
+[2025-12-15T13:57:32.061Z] [LOG] Server running at http://192.168.0.111:8080
+[2025-12-15T13:57:33.377Z] [LOG] Server running at http://192.168.0.111:8080
+[2025-12-15T13:57:35.792Z] [LOG] ✅ Connected to MongoDB
+[2025-12-15T13:57:40.174Z] [LOG] Server running at http://192.168.0.111:8080
+[2025-12-15T13:57:42.490Z] [LOG] ✅ Connected to MongoDB

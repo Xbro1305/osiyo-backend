@@ -53,19 +53,25 @@ app.use(
 );
 
 // === Настройка CORS ===
+
+const allowedOrigins = ["http://localhost:3000", "http://localhost:5173"];
+
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "http://192.168.0.111:3000",
-      "http://192.168.1.110:3000",
-      "http://localhost:3000",
-      "https://osiyohometex.uz",
-      "https://www.osiyohometex.uz",
-      "https://printing.osiyohometex.uz",
-    ],
+    origin: function (origin, callback) {
+      // Разрешаем локальные адреса или поддомены osiyohometex.uz
+      if (
+        !origin || // для Postman, curl и прямых запросов без origin
+        allowedOrigins.includes(origin) ||
+        origin.endsWith(".osiyohometex.uz")
+      ) {
+        callback(null, true);
+      } else {
+        callback(new Error(`Not allowed by CORS: ${origin}`));
+      }
+    },
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-    credentials: true,
+    credentials: true, // чтобы куки работали
   })
 );
 
