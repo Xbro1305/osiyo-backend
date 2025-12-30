@@ -18,6 +18,8 @@ const gazapalRT = require("./Router/Printing/Gazapal");
 const whiteningRT = require("./Router/Printing/Whitening");
 const ramRT = require("./Router/Printing/Ram");
 const clothesRT = require("./Router/Printing/Clothes");
+const printRT = require("./Router/Printing/Print");
+const stretchRT = require("./Router/Printing/Stretch");
 
 const app = express();
 
@@ -105,6 +107,8 @@ app.use("/printing/whitening", whiteningRT);
 app.use("/printing/clothes", clothesRT);
 app.use("/printing/painting", paintingRT);
 app.use("/printing/ram", ramRT);
+app.use("/printing/prints", printRT);
+app.use("/printing/stretch", stretchRT);
 
 // === Главная страница ===
 app.get("/", (req, res) => {

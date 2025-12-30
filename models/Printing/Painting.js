@@ -33,5 +33,5 @@ const PaintingSchema = new Schema(
   { timestamps: true }
 );
 
-const paintingDB = model("hitening", PaintingSchema);
+const paintingDB = model("painting", PaintingSchema);
 module.exports = paintingDB;
