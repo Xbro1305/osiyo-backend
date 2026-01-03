@@ -4005,3 +4005,1448 @@
 127.0.0.1 - - [30/Dec/2025:05:44:30 +0000] "DELETE /designs/3 HTTP/1.1" 200 280 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
 127.0.0.1 - - [30/Dec/2025:05:44:30 +0000] "OPTIONS /designs HTTP/1.1" 204 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
 127.0.0.1 - - [30/Dec/2025:05:44:30 +0000] "GET /designs HTTP/1.1" 200 1613 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:19:54 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:19:56 +0000] "GET /printing/gazapal HTTP/1.1" 200 754 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:19:56 +0000] "GET /users/getme HTTP/1.1" 200 187 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:19:57 +0000] "GET /printing/stretch HTTP/1.1" 200 739 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:24:04 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:24:04 +0000] "GET /users/getme HTTP/1.1" 200 187 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:24:07 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:24:08 +0000] "GET /users/getme HTTP/1.1" 200 187 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:24:33 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:24:33 +0000] "GET /users/getme HTTP/1.1" 200 187 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:24:33 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:24:33 +0000] "GET /printing/stretch HTTP/1.1" 200 739 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:24:54 +0000] "GET /printing/zrelniy HTTP/1.1" 404 155 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:24:54 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:24:56 +0000] "GET /printing/zrelniy HTTP/1.1" 404 155 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:24:56 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:25:02 +0000] "GET /printing/zrelniy HTTP/1.1" 404 155 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:25:02 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:25:06 +0000] "GET /printing/zrelniy HTTP/1.1" 404 155 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:25:06 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2025-12-30T09:25:32.134Z] [LOG] Server running at http://192.168.0.105:8080
+[2025-12-30T09:25:33.967Z] [LOG] Server running at http://192.168.0.105:8080
+[2025-12-30T09:25:36.316Z] [LOG] ✅ Connected to MongoDB
+[2025-12-30T09:25:54.478Z] [LOG] Server running at http://192.168.0.105:8080
+127.0.0.1 - - [30/Dec/2025:09:25:55 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2025-12-30T09:25:56.838Z] [LOG] ✅ Connected to MongoDB
+127.0.0.1 - - [30/Dec/2025:09:25:57 +0000] "GET /users/getme HTTP/1.1" 200 187 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:25:58 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:25:58 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:26:06 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:26:06 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:26:06 +0000] "GET /users/getme HTTP/1.1" 200 187 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:26:06 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:49:24 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:49:24 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:50:10 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:50:10 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:50:14 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:50:14 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:50:22 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:50:22 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:50:44 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:50:44 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:50:47 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:50:47 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:50:53 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:50:53 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:13 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:13 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:26 +0000] "OPTIONS /users/signin HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:27 +0000] "POST /users/signin HTTP/1.1" 200 676 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:27 +0000] "OPTIONS /designs HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:27 +0000] "OPTIONS /designs?article= HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:27 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:28 +0000] "GET /designs HTTP/1.1" 200 1613 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:28 +0000] "GET /actions HTTP/1.1" 200 502 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:29 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:29 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:30 +0000] "GET /designs?article= HTTP/1.1" 200 1613 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:30 +0000] "GET /users/getme HTTP/1.1" 200 187 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:49 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:49 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:49 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:49 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:51 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:51 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:51 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:51 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:54 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:54 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:54 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:51:54 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:03 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:03 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:03 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:03 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:07 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:07 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:07 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:07 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:17 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:17 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:17 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:17 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:20 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:20 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:20 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:20 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:22 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:22 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:22 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:22 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:26 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:26 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:26 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:26 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:30 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:30 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:30 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:30 +0000] "GET /users/getme HTTP/1.1" 200 187 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:57 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:57 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:57 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:57 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:59 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:52:59 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:00 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:00 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:03 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:03 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:04 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:04 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:25 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:25 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:26 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:26 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:26 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:26 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:27 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:27 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:29 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:29 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:30 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:53:30 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2025-12-30T09:54:08.387Z] [LOG] Server running at http://192.168.0.105:8080
+[2025-12-30T09:54:12.393Z] [LOG] ✅ Connected to MongoDB
+127.0.0.1 - - [30/Dec/2025:09:54:14 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:14 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:15 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:15 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:17 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:17 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:18 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:18 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:27 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:27 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:28 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:28 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:55 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:55 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:56 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:56 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:57 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:57 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:58 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:58 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:59 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:54:59 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:00 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:00 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:03 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:03 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:04 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:04 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:06 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:06 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:06 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:06 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:14 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:14 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:15 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:15 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:40 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:40 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:41 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:41 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:46 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:46 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:47 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:47 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:49 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:49 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:50 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:50 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:53 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:53 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:54 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:54 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:58 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:58 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:59 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:55:59 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:12 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:12 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:12 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:12 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:13 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:13 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:14 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:14 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:25 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:25 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:26 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:26 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:34 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:34 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:34 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:34 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:34 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:34 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:35 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:35 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:36 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:36 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:37 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:37 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:59 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:56:59 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:00 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:00 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:05 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:05 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:06 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:06 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:11 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:11 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:12 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:12 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:16 +0000] "OPTIONS /designs HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:16 +0000] "OPTIONS /designs?article= HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:16 +0000] "GET /designs?article= HTTP/1.1" 200 1613 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:16 +0000] "GET /actions HTTP/1.1" 200 502 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:16 +0000] "GET /designs HTTP/1.1" 200 1613 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:17 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:17 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:57 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:57 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:57 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:57:57 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:58:00 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:58:00 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:58:00 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:58:00 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:58:21 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:58:21 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:58:21 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:58:21 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:58:28 +0000] "OPTIONS /printing/zrelniy HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2025-12-30T09:58:31.612Z] [ERROR] 💥 Unhandled Rejection: {
+  "errors": {
+    "status": {
+      "name": "ValidatorError",
+      "message": "Path `status` is required.",
+      "properties": {
+        "message": "Path `status` is required.",
+        "type": "required",
+        "path": "status"
+      },
+      "kind": "required",
+      "path": "status"
+    },
+    "temperature": {
+      "name": "ValidatorError",
+      "message": "Path `temperature` is required.",
+      "properties": {
+        "message": "Path `temperature` is required.",
+        "type": "required",
+        "path": "temperature"
+      },
+      "kind": "required",
+      "path": "temperature"
+    },
+    "speed": {
+      "name": "ValidatorError",
+      "message": "Path `speed` is required.",
+      "properties": {
+        "message": "Path `speed` is required.",
+        "type": "required",
+        "path": "speed"
+      },
+      "kind": "required",
+      "path": "speed"
+    },
+    "prints.0.orderCloth": {
+      "name": "ValidatorError",
+      "message": "Path `orderCloth` is required.",
+      "properties": {
+        "message": "Path `orderCloth` is required.",
+        "type": "required",
+        "path": "orderCloth"
+      },
+      "kind": "required",
+      "path": "orderCloth"
+    },
+    "prints.0.printed": {
+      "name": "ValidatorError",
+      "message": "Path `printed` is required.",
+      "properties": {
+        "message": "Path `printed` is required.",
+        "type": "required",
+        "path": "printed"
+      },
+      "kind": "required",
+      "path": "printed"
+    },
+    "prints.0.orderName": {
+      "name": "ValidatorError",
+      "message": "Path `orderName` is required.",
+      "properties": {
+        "message": "Path `orderName` is required.",
+        "type": "required",
+        "path": "orderName"
+      },
+      "kind": "required",
+      "path": "orderName"
+    }
+  },
+  "_message": "zrelniy validation failed",
+  "name": "ValidationError",
+  "message": "zrelniy validation failed: status: Path `status` is required., temperature: Path `temperature` is required., speed: Path `speed` is required., prints.0.orderCloth: Path `orderCloth` is required., prints.0.printed: Path `printed` is required., prints.0.orderName: Path `orderName` is required."
+}
+127.0.0.1 - - [30/Dec/2025:09:58:39 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:58:39 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:58:40 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:58:40 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:59:05 +0000] "OPTIONS /printing/zrelniy HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2025-12-30T09:59:06.645Z] [ERROR] 💥 Unhandled Rejection: {
+  "errors": {
+    "status": {
+      "name": "ValidatorError",
+      "message": "Path `status` is required.",
+      "properties": {
+        "message": "Path `status` is required.",
+        "type": "required",
+        "path": "status"
+      },
+      "kind": "required",
+      "path": "status"
+    },
+    "temperature": {
+      "name": "ValidatorError",
+      "message": "Path `temperature` is required.",
+      "properties": {
+        "message": "Path `temperature` is required.",
+        "type": "required",
+        "path": "temperature"
+      },
+      "kind": "required",
+      "path": "temperature"
+    },
+    "speed": {
+      "name": "ValidatorError",
+      "message": "Path `speed` is required.",
+      "properties": {
+        "message": "Path `speed` is required.",
+        "type": "required",
+        "path": "speed"
+      },
+      "kind": "required",
+      "path": "speed"
+    },
+    "prints.0.orderCloth": {
+      "name": "ValidatorError",
+      "message": "Path `orderCloth` is required.",
+      "properties": {
+        "message": "Path `orderCloth` is required.",
+        "type": "required",
+        "path": "orderCloth"
+      },
+      "kind": "required",
+      "path": "orderCloth"
+    },
+    "prints.0.printed": {
+      "name": "ValidatorError",
+      "message": "Path `printed` is required.",
+      "properties": {
+        "message": "Path `printed` is required.",
+        "type": "required",
+        "path": "printed"
+      },
+      "kind": "required",
+      "path": "printed"
+    },
+    "prints.0.orderName": {
+      "name": "ValidatorError",
+      "message": "Path `orderName` is required.",
+      "properties": {
+        "message": "Path `orderName` is required.",
+        "type": "required",
+        "path": "orderName"
+      },
+      "kind": "required",
+      "path": "orderName"
+    }
+  },
+  "_message": "zrelniy validation failed",
+  "name": "ValidationError",
+  "message": "zrelniy validation failed: status: Path `status` is required., temperature: Path `temperature` is required., speed: Path `speed` is required., prints.0.orderCloth: Path `orderCloth` is required., prints.0.printed: Path `printed` is required., prints.0.orderName: Path `orderName` is required."
+}
+127.0.0.1 - - [30/Dec/2025:09:59:38 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:59:38 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:59:39 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:59:39 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:59:41 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:59:41 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:59:42 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:59:42 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:59:44 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:59:44 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:59:44 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:09:59:44 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:06 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:06 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:06 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:06 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:11 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:11 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:12 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:12 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:13 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:13 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:14 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:14 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:16 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:16 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:16 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:16 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:27 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:27 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:28 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:28 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:55 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:55 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:56 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:56 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:58 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:58 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:59 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:00:59 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:02 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:02 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:02 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:02 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:08 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:08 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:09 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:09 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:11 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:11 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:12 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:12 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:17 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:17 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:18 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:18 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:20 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:20 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:21 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:21 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:24 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:24 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:25 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:25 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:26 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:26 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:27 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:01:27 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:22:59 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:22:59 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:22:59 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:22:59 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:23:38 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:23:38 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:23:38 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:23:38 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:23:40 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:23:40 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:23:40 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:23:40 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:23:41 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:23:41 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:23:41 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:23:41 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:23:43 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:23:43 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:23:43 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:23:43 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:24:58 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:24:58 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:24:58 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:24:58 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:15 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:15 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:15 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:15 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:37 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:37 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:38 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:38 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:55 +0000] "POST /printing/zrelniy HTTP/1.1" - - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:55 +0000] "POST /printing/zrelniy HTTP/1.1" - - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:55 +0000] "GET /printing/zrelniy HTTP/1.1" - - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:55 +0000] "GET /printing/zrelniy HTTP/1.1" - - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:56 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:57 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:58 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:58 +0000] "GET /users/getme HTTP/1.1" 200 187 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:58 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:25:59 +0000] "GET /users/getme HTTP/1.1" 200 187 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:26:01 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:26:01 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:26:06 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:26:06 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:26:07 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:26:07 +0000] "GET /users/getme HTTP/1.1" 200 187 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:26:07 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:26:07 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:26:07 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:26:07 +0000] "GET /users/getme HTTP/1.1" 200 187 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:37:36 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:37:36 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:37:37 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:37:37 +0000] "GET /users/getme HTTP/1.1" 200 187 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:37:37 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:37:37 +0000] "GET /users/getme HTTP/1.1" 200 187 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:37:38 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [30/Dec/2025:10:37:38 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2026-01-03T03:54:43.080Z] [LOG] Server running at http://192.168.0.106:8080
+[2026-01-03T03:54:46.501Z] [LOG] ✅ Connected to MongoDB
+127.0.0.1 - - [03/Jan/2026:03:55:49 +0000] "OPTIONS /users/signin HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:55:49 +0000] "POST /users/signin HTTP/1.1" 200 676 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:55:50 +0000] "OPTIONS /designs HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:55:50 +0000] "OPTIONS /designs?article= HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:55:50 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:55:50 +0000] "GET /actions HTTP/1.1" 200 502 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:55:50 +0000] "GET /designs HTTP/1.1" 200 1613 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:55:50 +0000] "GET /users/getme HTTP/1.1" 200 187 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:55:50 +0000] "GET /designs?article= HTTP/1.1" 200 1613 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:55:54 +0000] "GET /printing/prints HTTP/1.1" 200 2183 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:55:55 +0000] "GET /printing/zrelniy HTTP/1.1" 200 71 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:56:52 +0000] "OPTIONS /printing/zrelniy HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2026-01-03T03:56:53.614Z] [ERROR] 💥 Unhandled Rejection: {
+  "errors": {
+    "status": {
+      "name": "ValidatorError",
+      "message": "Path `status` is required.",
+      "properties": {
+        "message": "Path `status` is required.",
+        "type": "required",
+        "path": "status"
+      },
+      "kind": "required",
+      "path": "status"
+    },
+    "temperature": {
+      "name": "ValidatorError",
+      "message": "Path `temperature` is required.",
+      "properties": {
+        "message": "Path `temperature` is required.",
+        "type": "required",
+        "path": "temperature"
+      },
+      "kind": "required",
+      "path": "temperature"
+    },
+    "speed": {
+      "name": "ValidatorError",
+      "message": "Path `speed` is required.",
+      "properties": {
+        "message": "Path `speed` is required.",
+        "type": "required",
+        "path": "speed"
+      },
+      "kind": "required",
+      "path": "speed"
+    },
+    "prints.0.orderCloth": {
+      "name": "ValidatorError",
+      "message": "Path `orderCloth` is required.",
+      "properties": {
+        "message": "Path `orderCloth` is required.",
+        "type": "required",
+        "path": "orderCloth"
+      },
+      "kind": "required",
+      "path": "orderCloth"
+    },
+    "prints.0.printed": {
+      "name": "ValidatorError",
+      "message": "Path `printed` is required.",
+      "properties": {
+        "message": "Path `printed` is required.",
+        "type": "required",
+        "path": "printed"
+      },
+      "kind": "required",
+      "path": "printed"
+    },
+    "prints.0.orderName": {
+      "name": "ValidatorError",
+      "message": "Path `orderName` is required.",
+      "properties": {
+        "message": "Path `orderName` is required.",
+        "type": "required",
+        "path": "orderName"
+      },
+      "kind": "required",
+      "path": "orderName"
+    },
+    "prints.1.orderCloth": {
+      "name": "ValidatorError",
+      "message": "Path `orderCloth` is required.",
+      "properties": {
+        "message": "Path `orderCloth` is required.",
+        "type": "required",
+        "path": "orderCloth"
+      },
+      "kind": "required",
+      "path": "orderCloth"
+    },
+    "prints.1.printed": {
+      "name": "ValidatorError",
+      "message": "Path `printed` is required.",
+      "properties": {
+        "message": "Path `printed` is required.",
+        "type": "required",
+        "path": "printed"
+      },
+      "kind": "required",
+      "path": "printed"
+    },
+    "prints.1.orderName": {
+      "name": "ValidatorError",
+      "message": "Path `orderName` is required.",
+      "properties": {
+        "message": "Path `orderName` is required.",
+        "type": "required",
+        "path": "orderName"
+      },
+      "kind": "required",
+      "path": "orderName"
+    }
+  },
+  "_message": "zrelniy validation failed",
+  "name": "ValidationError",
+  "message": "zrelniy validation failed: status: Path `status` is required., temperature: Path `temperature` is required., speed: Path `speed` is required., prints.0.orderCloth: Path `orderCloth` is required., prints.0.printed: Path `printed` is required., prints.0.orderName: Path `orderName` is required., prints.1.orderCloth: Path `orderCloth` is required., prints.1.printed: Path `printed` is required., prints.1.orderName: Path `orderName` is required."
+}
+[2026-01-03T03:59:01.257Z] [LOG] Server running at http://192.168.0.106:8080
+[2026-01-03T03:59:05.124Z] [LOG] ✅ Connected to MongoDB
+127.0.0.1 - - [03/Jan/2026:03:59:19 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:19 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:21 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:21 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:24 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:24 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:31 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:31 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:41 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:41 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:45 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:45 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:50 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:50 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:58 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:58 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:58 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:03:59:58 +0000] "GET /users/getme HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:00:03 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:00:03 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:00:05 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:00:05 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:00:09 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:00:09 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:00:13 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:00:13 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:00:17 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:00:17 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:00:21 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:00:21 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:00:24 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:00:24 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:01:21 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:01:21 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:01:23 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:01:23 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:01:26 +0000] "OPTIONS /printing/zrelniy HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2026-01-03T04:01:27.779Z] [ERROR] 💥 Unhandled Rejection: {
+  "errors": {
+    "status": {
+      "stringValue": "\"completed\"",
+      "valueType": "string",
+      "kind": "Boolean",
+      "value": "completed",
+      "path": "status",
+      "reason": {
+        "stringValue": "\"completed\"",
+        "valueType": "string",
+        "kind": "boolean",
+        "value": "completed",
+        "name": "CastError",
+        "message": "Cast to boolean failed for value \"completed\" (type string) at path \"undefined\""
+      },
+      "name": "CastError",
+      "message": "Cast to Boolean failed for value \"completed\" (type string) at path \"status\" because of \"CastError\""
+    },
+    "temperature": {
+      "name": "ValidatorError",
+      "message": "Path `temperature` is required.",
+      "properties": {
+        "message": "Path `temperature` is required.",
+        "type": "required",
+        "path": "temperature"
+      },
+      "kind": "required",
+      "path": "temperature"
+    },
+    "speed": {
+      "name": "ValidatorError",
+      "message": "Path `speed` is required.",
+      "properties": {
+        "message": "Path `speed` is required.",
+        "type": "required",
+        "path": "speed"
+      },
+      "kind": "required",
+      "path": "speed"
+    },
+    "prints.0.orderCloth": {
+      "name": "ValidatorError",
+      "message": "Path `orderCloth` is required.",
+      "properties": {
+        "message": "Path `orderCloth` is required.",
+        "type": "required",
+        "path": "orderCloth"
+      },
+      "kind": "required",
+      "path": "orderCloth"
+    },
+    "prints.0.printed": {
+      "name": "ValidatorError",
+      "message": "Path `printed` is required.",
+      "properties": {
+        "message": "Path `printed` is required.",
+        "type": "required",
+        "path": "printed"
+      },
+      "kind": "required",
+      "path": "printed"
+    },
+    "prints.0.orderName": {
+      "name": "ValidatorError",
+      "message": "Path `orderName` is required.",
+      "properties": {
+        "message": "Path `orderName` is required.",
+        "type": "required",
+        "path": "orderName"
+      },
+      "kind": "required",
+      "path": "orderName"
+    }
+  },
+  "_message": "zrelniy validation failed",
+  "name": "ValidationError",
+  "message": "zrelniy validation failed: status: Cast to Boolean failed for value \"completed\" (type string) at path \"status\" because of \"CastError\", temperature: Path `temperature` is required., speed: Path `speed` is required., prints.0.orderCloth: Path `orderCloth` is required., prints.0.printed: Path `printed` is required., prints.0.orderName: Path `orderName` is required."
+}
+127.0.0.1 - - [03/Jan/2026:04:02:09 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:02:09 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:02:20 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:02:20 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:02:26 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:02:26 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:02:27 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:02:27 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:03:19 +0000] "OPTIONS /printing/zrelniy HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2026-01-03T04:03:20.526Z] [ERROR] 💥 Unhandled Rejection: {
+  "errors": {
+    "status": {
+      "stringValue": "\"completed\"",
+      "valueType": "string",
+      "kind": "Boolean",
+      "value": "completed",
+      "path": "status",
+      "reason": {
+        "stringValue": "\"completed\"",
+        "valueType": "string",
+        "kind": "boolean",
+        "value": "completed",
+        "name": "CastError",
+        "message": "Cast to boolean failed for value \"completed\" (type string) at path \"undefined\""
+      },
+      "name": "CastError",
+      "message": "Cast to Boolean failed for value \"completed\" (type string) at path \"status\" because of \"CastError\""
+    },
+    "prints.0.orderCloth": {
+      "name": "ValidatorError",
+      "message": "Path `orderCloth` is required.",
+      "properties": {
+        "message": "Path `orderCloth` is required.",
+        "type": "required",
+        "path": "orderCloth"
+      },
+      "kind": "required",
+      "path": "orderCloth"
+    },
+    "prints.0.printed": {
+      "name": "ValidatorError",
+      "message": "Path `printed` is required.",
+      "properties": {
+        "message": "Path `printed` is required.",
+        "type": "required",
+        "path": "printed"
+      },
+      "kind": "required",
+      "path": "printed"
+    },
+    "prints.0.orderName": {
+      "name": "ValidatorError",
+      "message": "Path `orderName` is required.",
+      "properties": {
+        "message": "Path `orderName` is required.",
+        "type": "required",
+        "path": "orderName"
+      },
+      "kind": "required",
+      "path": "orderName"
+    }
+  },
+  "_message": "zrelniy validation failed",
+  "name": "ValidationError",
+  "message": "zrelniy validation failed: status: Cast to Boolean failed for value \"completed\" (type string) at path \"status\" because of \"CastError\", prints.0.orderCloth: Path `orderCloth` is required., prints.0.printed: Path `printed` is required., prints.0.orderName: Path `orderName` is required."
+}
+127.0.0.1 - - [03/Jan/2026:04:03:28 +0000] "POST /printing/zrelniy HTTP/1.1" - - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:03:28 +0000] "POST /printing/zrelniy HTTP/1.1" - - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:03:29 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:03:29 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:03:29 +0000] "GET /users/getme HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:03:29 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:03:45 +0000] "OPTIONS /printing/zrelniy HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2026-01-03T04:03:46.109Z] [ERROR] 💥 Unhandled Rejection: {
+  "errors": {
+    "status": {
+      "stringValue": "\"completed\"",
+      "valueType": "string",
+      "kind": "Boolean",
+      "value": "completed",
+      "path": "status",
+      "reason": {
+        "stringValue": "\"completed\"",
+        "valueType": "string",
+        "kind": "boolean",
+        "value": "completed",
+        "name": "CastError",
+        "message": "Cast to boolean failed for value \"completed\" (type string) at path \"undefined\""
+      },
+      "name": "CastError",
+      "message": "Cast to Boolean failed for value \"completed\" (type string) at path \"status\" because of \"CastError\""
+    },
+    "length": {
+      "name": "ValidatorError",
+      "message": "Path `length` is required.",
+      "properties": {
+        "message": "Path `length` is required.",
+        "type": "required",
+        "path": "length"
+      },
+      "kind": "required",
+      "path": "length"
+    },
+    "prints.0.orderCloth": {
+      "name": "ValidatorError",
+      "message": "Path `orderCloth` is required.",
+      "properties": {
+        "message": "Path `orderCloth` is required.",
+        "type": "required",
+        "path": "orderCloth"
+      },
+      "kind": "required",
+      "path": "orderCloth"
+    },
+    "prints.0.printed": {
+      "name": "ValidatorError",
+      "message": "Path `printed` is required.",
+      "properties": {
+        "message": "Path `printed` is required.",
+        "type": "required",
+        "path": "printed"
+      },
+      "kind": "required",
+      "path": "printed"
+    },
+    "prints.0.orderName": {
+      "name": "ValidatorError",
+      "message": "Path `orderName` is required.",
+      "properties": {
+        "message": "Path `orderName` is required.",
+        "type": "required",
+        "path": "orderName"
+      },
+      "kind": "required",
+      "path": "orderName"
+    },
+    "prints.1.orderCloth": {
+      "name": "ValidatorError",
+      "message": "Path `orderCloth` is required.",
+      "properties": {
+        "message": "Path `orderCloth` is required.",
+        "type": "required",
+        "path": "orderCloth"
+      },
+      "kind": "required",
+      "path": "orderCloth"
+    },
+    "prints.1.printed": {
+      "name": "ValidatorError",
+      "message": "Path `printed` is required.",
+      "properties": {
+        "message": "Path `printed` is required.",
+        "type": "required",
+        "path": "printed"
+      },
+      "kind": "required",
+      "path": "printed"
+    },
+    "prints.1.orderName": {
+      "name": "ValidatorError",
+      "message": "Path `orderName` is required.",
+      "properties": {
+        "message": "Path `orderName` is required.",
+        "type": "required",
+        "path": "orderName"
+      },
+      "kind": "required",
+      "path": "orderName"
+    }
+  },
+  "_message": "zrelniy validation failed",
+  "name": "ValidationError",
+  "message": "zrelniy validation failed: status: Cast to Boolean failed for value \"completed\" (type string) at path \"status\" because of \"CastError\", length: Path `length` is required., prints.0.orderCloth: Path `orderCloth` is required., prints.0.printed: Path `printed` is required., prints.0.orderName: Path `orderName` is required., prints.1.orderCloth: Path `orderCloth` is required., prints.1.printed: Path `printed` is required., prints.1.orderName: Path `orderName` is required."
+}
+127.0.0.1 - - [03/Jan/2026:04:03:48 +0000] "OPTIONS /designs HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:03:48 +0000] "OPTIONS /designs?article= HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:03:48 +0000] "GET /designs HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:03:48 +0000] "GET /designs?article= HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:03:48 +0000] "GET /actions HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:03:52 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:03:52 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2026-01-03T04:04:22.260Z] [LOG] Server running at http://192.168.0.106:8080
+[2026-01-03T04:04:25.398Z] [LOG] ✅ Connected to MongoDB
+[2026-01-03T04:04:38.366Z] [LOG] Server running at http://192.168.0.106:8080
+[2026-01-03T04:04:40.721Z] [LOG] ✅ Connected to MongoDB
+127.0.0.1 - - [03/Jan/2026:04:04:44 +0000] "OPTIONS /printing/zrelniy HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2026-01-03T04:04:45.427Z] [LOG] [
+  {
+    "design": {
+      "article": "210",
+      "imageUrl": "/uploads/warehouse/1765978218545-image"
+    },
+    "order": {
+      "name": "wfsad",
+      "cloth": "Poplin Open",
+      "length": 3000,
+      "printed": 3030,
+      "stretch": 1,
+      "status": true
+    },
+    "user": {
+      "id": "693fe7b59de1ff7f4e9ac6f7",
+      "name": "Ahmadjon Sharifov",
+      "role": "superadmin",
+      "shift": "A"
+    },
+    "_id": "695256a93d1da3dbabc82a27",
+    "passNo": "afsdasf",
+    "date": "2025-12-29",
+    "designArt": "210",
+    "gazapalIds": [
+      "693ff1b740cce42b65e57585",
+      "69414afcee984f3107aab2b4"
+    ],
+    "gazapals": [
+      {
+        "cloth": {
+          "id": "693ff19440cce42b65e57574",
+          "name": "Osiyo Poplin Close"
+        },
+        "user": {
+          "id": "693fe7b59de1ff7f4e9ac6f7",
+          "name": "Ahmadjon Sharifov",
+          "role": "superadmin",
+          "shift": "day"
+        },
+        "length": "3000",
+        "date": "2025-12-15",
+        "passNo": "test",
+        "_id": "693ff1b740cce42b65e57585"
+      },
+      {
+        "cloth": {
+          "id": "693ff19440cce42b65e57574",
+          "name": "Osiyo Poplin Close"
+        },
+        "user": {
+          "id": "693fe7b59de1ff7f4e9ac6f7",
+          "name": "Ahmadjon Sharifov",
+          "role": "superadmin",
+          "shift": "day"
+        },
+        "length": "3000",
+        "date": "2025-12-16",
+        "passNo": "tt",
+        "_id": "69414afcee984f3107aab2b4"
+      }
+    ],
+    "createdAt": "2025-12-29T10:23:37.278Z",
+    "updatedAt": "2025-12-29T10:23:37.278Z",
+    "__v": 0
+  },
+  {
+    "design": {
+      "article": "230",
+      "imageUrl": "/uploads/warehouse/1765978251145-image"
+    },
+    "order": {
+      "name": "Galtex 58",
+      "cloth": "Poplin Open",
+      "length": 3000,
+      "printed": 3030,
+      "stretch": 1,
+      "status": true
+    },
+    "user": {
+      "id": "693fe7b59de1ff7f4e9ac6f7",
+      "name": "Ahmadjon Sharifov",
+      "role": "superadmin",
+      "shift": "A"
+    },
+    "_id": "695367f0d84f22f776f39b3c",
+    "passNo": "Pass",
+    "date": "2025-12-30",
+    "designArt": "230",
+    "gazapalIds": [
+      "69414afcee984f3107aab2b4",
+      "693ff1b740cce42b65e57585"
+    ],
+    "gazapals": [
+      {
+        "cloth": {
+          "id": "693ff19440cce42b65e57574",
+          "name": "Osiyo Poplin Close"
+        },
+        "user": {
+          "id": "693fe7b59de1ff7f4e9ac6f7",
+          "name": "Ahmadjon Sharifov",
+          "role": "superadmin",
+          "shift": "day"
+        },
+        "length": "3000",
+        "date": "2025-12-15",
+        "passNo": "test",
+        "_id": "693ff1b740cce42b65e57585"
+      },
+      {
+        "cloth": {
+          "id": "693ff19440cce42b65e57574",
+          "name": "Osiyo Poplin Close"
+        },
+        "user": {
+          "id": "693fe7b59de1ff7f4e9ac6f7",
+          "name": "Ahmadjon Sharifov",
+          "role": "superadmin",
+          "shift": "day"
+        },
+        "length": "3000",
+        "date": "2025-12-16",
+        "passNo": "tt",
+        "_id": "69414afcee984f3107aab2b4"
+      }
+    ],
+    "createdAt": "2025-12-30T05:49:36.157Z",
+    "updatedAt": "2025-12-30T05:49:36.157Z",
+    "__v": 0
+  }
+]
+[2026-01-03T04:04:45.451Z] [ERROR] 💥 Unhandled Rejection: {
+  "errors": {
+    "user.shift": {
+      "name": "ValidatorError",
+      "message": "Path `user.shift` is required.",
+      "properties": {
+        "message": "Path `user.shift` is required.",
+        "type": "required",
+        "path": "user.shift",
+        "value": ""
+      },
+      "kind": "required",
+      "path": "user.shift",
+      "value": ""
+    },
+    "length": {
+      "name": "ValidatorError",
+      "message": "Path `length` is required.",
+      "properties": {
+        "message": "Path `length` is required.",
+        "type": "required",
+        "path": "length"
+      },
+      "kind": "required",
+      "path": "length"
+    },
+    "status": {
+      "name": "ValidatorError",
+      "message": "Path `status` is required.",
+      "properties": {
+        "message": "Path `status` is required.",
+        "type": "required",
+        "path": "status"
+      },
+      "kind": "required",
+      "path": "status"
+    },
+    "temperature": {
+      "name": "ValidatorError",
+      "message": "Path `temperature` is required.",
+      "properties": {
+        "message": "Path `temperature` is required.",
+        "type": "required",
+        "path": "temperature"
+      },
+      "kind": "required",
+      "path": "temperature"
+    },
+    "speed": {
+      "name": "ValidatorError",
+      "message": "Path `speed` is required.",
+      "properties": {
+        "message": "Path `speed` is required.",
+        "type": "required",
+        "path": "speed"
+      },
+      "kind": "required",
+      "path": "speed"
+    },
+    "passNo": {
+      "name": "ValidatorError",
+      "message": "Path `passNo` is required.",
+      "properties": {
+        "message": "Path `passNo` is required.",
+        "type": "required",
+        "path": "passNo",
+        "value": ""
+      },
+      "kind": "required",
+      "path": "passNo",
+      "value": ""
+    },
+    "prints.0.orderCloth": {
+      "name": "ValidatorError",
+      "message": "Path `orderCloth` is required.",
+      "properties": {
+        "message": "Path `orderCloth` is required.",
+        "type": "required",
+        "path": "orderCloth"
+      },
+      "kind": "required",
+      "path": "orderCloth"
+    },
+    "prints.0.printed": {
+      "name": "ValidatorError",
+      "message": "Path `printed` is required.",
+      "properties": {
+        "message": "Path `printed` is required.",
+        "type": "required",
+        "path": "printed"
+      },
+      "kind": "required",
+      "path": "printed"
+    },
+    "prints.0.orderName": {
+      "name": "ValidatorError",
+      "message": "Path `orderName` is required.",
+      "properties": {
+        "message": "Path `orderName` is required.",
+        "type": "required",
+        "path": "orderName"
+      },
+      "kind": "required",
+      "path": "orderName"
+    },
+    "prints.1.orderCloth": {
+      "name": "ValidatorError",
+      "message": "Path `orderCloth` is required.",
+      "properties": {
+        "message": "Path `orderCloth` is required.",
+        "type": "required",
+        "path": "orderCloth"
+      },
+      "kind": "required",
+      "path": "orderCloth"
+    },
+    "prints.1.printed": {
+      "name": "ValidatorError",
+      "message": "Path `printed` is required.",
+      "properties": {
+        "message": "Path `printed` is required.",
+        "type": "required",
+        "path": "printed"
+      },
+      "kind": "required",
+      "path": "printed"
+    },
+    "prints.1.orderName": {
+      "name": "ValidatorError",
+      "message": "Path `orderName` is required.",
+      "properties": {
+        "message": "Path `orderName` is required.",
+        "type": "required",
+        "path": "orderName"
+      },
+      "kind": "required",
+      "path": "orderName"
+    }
+  },
+  "_message": "zrelniy validation failed",
+  "name": "ValidationError",
+  "message": "zrelniy validation failed: user.shift: Path `user.shift` is required., length: Path `length` is required., status: Path `status` is required., temperature: Path `temperature` is required., speed: Path `speed` is required., passNo: Path `passNo` is required., prints.0.orderCloth: Path `orderCloth` is required., prints.0.printed: Path `printed` is required., prints.0.orderName: Path `orderName` is required., prints.1.orderCloth: Path `orderCloth` is required., prints.1.printed: Path `printed` is required., prints.1.orderName: Path `orderName` is required."
+}
+[2026-01-03T04:05:09.271Z] [LOG] Server running at http://192.168.0.106:8080
+[2026-01-03T04:05:10.464Z] [LOG] Server running at http://192.168.0.106:8080
+[2026-01-03T04:05:12.803Z] [LOG] ✅ Connected to MongoDB
+[2026-01-03T04:05:20.303Z] [LOG] Server running at http://192.168.0.106:8080
+[2026-01-03T04:05:21.300Z] [LOG] Server running at http://192.168.0.106:8080
+[2026-01-03T04:05:24.500Z] [LOG] Server running at http://192.168.0.106:8080
+[2026-01-03T04:05:26.864Z] [LOG] ✅ Connected to MongoDB
+[2026-01-03T04:05:48.802Z] [LOG] Server running at http://192.168.0.106:8080
+[2026-01-03T04:05:50.338Z] [LOG] Server running at http://192.168.0.106:8080
+[2026-01-03T04:05:52.663Z] [LOG] ✅ Connected to MongoDB
+[2026-01-03T04:05:53.046Z] [LOG] Server running at http://192.168.0.106:8080
+[2026-01-03T04:05:55.407Z] [LOG] ✅ Connected to MongoDB
+127.0.0.1 - - [03/Jan/2026:04:06:11 +0000] "OPTIONS /printing/zrelniy HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2026-01-03T04:06:12.709Z] [ERROR] 💥 Unhandled Rejection: {
+  "errors": {
+    "status": {
+      "stringValue": "\"progress\"",
+      "valueType": "string",
+      "kind": "Boolean",
+      "value": "progress",
+      "path": "status",
+      "reason": {
+        "stringValue": "\"progress\"",
+        "valueType": "string",
+        "kind": "boolean",
+        "value": "progress",
+        "name": "CastError",
+        "message": "Cast to boolean failed for value \"progress\" (type string) at path \"undefined\""
+      },
+      "name": "CastError",
+      "message": "Cast to Boolean failed for value \"progress\" (type string) at path \"status\" because of \"CastError\""
+    },
+    "length": {
+      "name": "ValidatorError",
+      "message": "Path `length` is required.",
+      "properties": {
+        "message": "Path `length` is required.",
+        "type": "required",
+        "path": "length"
+      },
+      "kind": "required",
+      "path": "length"
+    }
+  },
+  "_message": "zrelniy validation failed",
+  "name": "ValidationError",
+  "message": "zrelniy validation failed: status: Cast to Boolean failed for value \"progress\" (type string) at path \"status\" because of \"CastError\", length: Path `length` is required."
+}
+[2026-01-03T04:06:40.178Z] [LOG] Server running at http://192.168.0.106:8080
+[2026-01-03T04:06:43.422Z] [LOG] Server running at http://192.168.0.106:8080
+[2026-01-03T04:06:45.788Z] [LOG] ✅ Connected to MongoDB
+[2026-01-03T04:06:46.131Z] [LOG] Server running at http://192.168.0.106:8080
+[2026-01-03T04:06:48.496Z] [LOG] ✅ Connected to MongoDB
+127.0.0.1 - - [03/Jan/2026:04:06:51 +0000] "OPTIONS /printing/zrelniy HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2026-01-03T04:06:52.392Z] [LOG] {
+  "passNo": "Passwda",
+  "date": "2026-01-03",
+  "speed": 50,
+  "temperature": 100,
+  "status": "progress",
+  "user": {
+    "id": "693fe7b59de1ff7f4e9ac6f7",
+    "name": "Ahmadjon Sharifov",
+    "role": "superadmin",
+    "shift": "A"
+  },
+  "printIds": [
+    "695367f0d84f22f776f39b3c",
+    "695256a93d1da3dbabc82a27"
+  ],
+  "prints": [
+    {
+      "passNo": "afsdasf",
+      "orderName": "wfsad",
+      "printed": "3030",
+      "orderCloth": "Poplin Open",
+      "_id": "695895dcf69aeec3320fbb5f"
+    },
+    {
+      "passNo": "Pass",
+      "orderName": "Galtex 58",
+      "printed": "3030",
+      "orderCloth": "Poplin Open",
+      "_id": "695895dcf69aeec3320fbb60"
+    }
+  ],
+  "_id": "695895dcf69aeec3320fbb5e",
+  "createdAt": "2026-01-03T04:06:52.140Z",
+  "updatedAt": "2026-01-03T04:06:52.140Z",
+  "__v": 0
+}
+127.0.0.1 - - [03/Jan/2026:04:06:52 +0000] "POST /printing/zrelniy HTTP/1.1" 200 690 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:06:52 +0000] "GET /printing/zrelniy HTTP/1.1" 200 694 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:06:56 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:06:57 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:06:57 +0000] "GET /users/getme HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:06:57 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:07:09 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:07:09 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:07:09 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:07:09 +0000] "GET /users/getme HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:07:10 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:07:10 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:07:28 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:07:28 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:07:33 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:07:33 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:21:50 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:21:50 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:21:50 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:21:50 +0000] "GET /users/getme HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:28:29 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:28:29 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:28:34 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:28:34 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:28:41 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:28:41 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:28:44 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:28:44 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:02 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:02 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:03 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:03 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:04 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:04 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:06 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:06 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:08 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:08 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:11 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:11 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:11 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:13 +0000] "GET /users/getme HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:30 +0000] "OPTIONS /printing/zrelniy HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2026-01-03T04:29:31.916Z] [LOG] {
+  "passNo": "fasdfs",
+  "date": "2026-01-03",
+  "speed": 60,
+  "temperature": 100,
+  "status": "completed",
+  "user": {
+    "id": "693fe7b59de1ff7f4e9ac6f7",
+    "name": "Ahmadjon Sharifov",
+    "role": "superadmin",
+    "shift": "B"
+  },
+  "printIds": [
+    "695367f0d84f22f776f39b3c",
+    "695256a93d1da3dbabc82a27"
+  ],
+  "prints": [
+    {
+      "passNo": "afsdasf",
+      "orderName": "wfsad",
+      "printed": "3030",
+      "orderCloth": "Poplin Open",
+      "_id": "69589b2bf69aeec3320fbbf1"
+    },
+    {
+      "passNo": "Pass",
+      "orderName": "Galtex 58",
+      "printed": "3030",
+      "orderCloth": "Poplin Open",
+      "_id": "69589b2bf69aeec3320fbbf2"
+    }
+  ],
+  "_id": "69589b2bf69aeec3320fbbf0",
+  "createdAt": "2026-01-03T04:29:31.564Z",
+  "updatedAt": "2026-01-03T04:29:31.564Z",
+  "__v": 0
+}
+127.0.0.1 - - [03/Jan/2026:04:29:31 +0000] "POST /printing/zrelniy HTTP/1.1" 200 690 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:32 +0000] "GET /printing/zrelniy HTTP/1.1" 200 1318 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:44 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:29:44 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:30:03 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:30:03 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:30:12 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:30:12 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:30:15 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:30:15 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:32:26 +0000] "OPTIONS /printing/zrelniy HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2026-01-03T04:32:27.942Z] [LOG] {
+  "passNo": "fasdfs",
+  "date": "2026-01-03",
+  "speed": 60,
+  "temperature": 100,
+  "status": "completed",
+  "user": {
+    "id": "693fe7b59de1ff7f4e9ac6f7",
+    "name": "Ahmadjon Sharifov",
+    "role": "superadmin",
+    "shift": "B"
+  },
+  "printIds": [
+    "695367f0d84f22f776f39b3c",
+    "695256a93d1da3dbabc82a27"
+  ],
+  "prints": [
+    {
+      "passNo": "afsdasf",
+      "orderName": "wfsad",
+      "printed": "3030",
+      "orderCloth": "Poplin Open",
+      "_id": "69589bdbf69aeec3320fbc29"
+    },
+    {
+      "passNo": "Pass",
+      "orderName": "Galtex 58",
+      "printed": "3030",
+      "orderCloth": "Poplin Open",
+      "_id": "69589bdbf69aeec3320fbc2a"
+    }
+  ],
+  "_id": "69589bdbf69aeec3320fbc28",
+  "createdAt": "2026-01-03T04:32:27.654Z",
+  "updatedAt": "2026-01-03T04:32:27.654Z",
+  "__v": 0
+}
+127.0.0.1 - - [03/Jan/2026:04:32:27 +0000] "POST /printing/zrelniy HTTP/1.1" 200 690 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:32:28 +0000] "GET /printing/zrelniy HTTP/1.1" 200 1942 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:35:32 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:35:32 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:36:02 +0000] "OPTIONS /users/getme HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:36:03 +0000] "GET /printing/prints HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:36:03 +0000] "GET /users/getme HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+127.0.0.1 - - [03/Jan/2026:04:36:03 +0000] "GET /printing/zrelniy HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
+[2026-01-03T04:36:06.330Z] [LOG] Server running at http://192.168.0.106:8080
+[2026-01-03T04:36:09.316Z] [LOG] ✅ Connected to MongoDB

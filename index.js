@@ -20,6 +20,7 @@ const ramRT = require("./Router/Printing/Ram");
 const clothesRT = require("./Router/Printing/Clothes");
 const printRT = require("./Router/Printing/Print");
 const stretchRT = require("./Router/Printing/Stretch");
+const zrelniyRT = require("./Router/Printing/Zrelniy");
 
 const app = express();
 
@@ -109,6 +110,7 @@ app.use("/printing/painting", paintingRT);
 app.use("/printing/ram", ramRT);
 app.use("/printing/prints", printRT);
 app.use("/printing/stretch", stretchRT);
+app.use("/printing/zrelniy", zrelniyRT);
 
 // === Главная страница ===
 app.get("/", (req, res) => {

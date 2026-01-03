@@ -80,8 +80,15 @@ zrelniyRT.post("/", [ValidateAdmin.check], async (req, res) => {
       const saved = await zrelniyDB.create({
         ...data,
         printIds: normalizedPrintIds,
-        prints,
+        prints: prints.map((item) => ({
+          passNo: item.passNo,
+          orderName: item.order.name,
+          printed: item.order.printed,
+          orderCloth: item.order.cloth,
+        })),
       });
+
+      console.log(saved);
 
       return res.status(200).json({
         msg: "Stretch created successfully",
