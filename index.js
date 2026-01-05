@@ -21,6 +21,10 @@ const clothesRT = require("./Router/Printing/Clothes");
 const printRT = require("./Router/Printing/Print");
 const stretchRT = require("./Router/Printing/Stretch");
 const zrelniyRT = require("./Router/Printing/Zrelniy");
+const finishRT = require("./Router/Printing/Finish");
+const finishStretchingRT = require("./Router/Printing/Finish_stretching");
+const calanderRT = require("./Router/Printing/Calander");
+const calanderStretchingRT = require("./Router/Printing/Calander_stretching");
 
 const app = express();
 
@@ -111,6 +115,10 @@ app.use("/printing/ram", ramRT);
 app.use("/printing/prints", printRT);
 app.use("/printing/stretch", stretchRT);
 app.use("/printing/zrelniy", zrelniyRT);
+app.use("/printing/finish", finishRT);
+app.use("/printing/finish_stretching", finishStretchingRT);
+app.use("/printing/calander", calanderRT);
+app.use("/printing/calander_stretching", calanderStretchingRT);
 
 // === Главная страница ===
 app.get("/", (req, res) => {

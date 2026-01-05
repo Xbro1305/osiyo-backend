@@ -1,19 +1,19 @@
 const { Router } = require("express");
-const zrelniyDB = require("../../models/Printing/Zrelniy.js");
+const finishStretchingDB = require("../../models/Printing/Finish_stretching.js");
 const printDB = require("../../models/Printing/Print.js");
 const { ValidateAdmin } = require("../../middleware/checkAdmin.js");
 const Users = require("../../models/Users.js");
 const jwt = require("jsonwebtoken");
 
-const zrelniyRT = Router();
+const finishStretchingRT = Router();
 
-zrelniyRT.get("/", async (req, res) => {
+finishStretchingRT.get("/", async (req, res) => {
   try {
-    const zrelniy = await zrelniyDB.find();
+    const data = await finishStretchingDB.find();
     res.status(200).json({
-      msg: "Zrelniy fetched successfully",
+      msg: "Finish stretching fetched successfully",
       variant: "success",
-      zrelniy,
+      data,
     });
   } catch (error) {
     res.status(500).json({
@@ -24,7 +24,7 @@ zrelniyRT.get("/", async (req, res) => {
   }
 });
 
-zrelniyRT.post("/", [ValidateAdmin.check], async (req, res) => {
+finishStretchingRT.post("/", [ValidateAdmin.check], async (req, res) => {
   try {
     const token = req.headers.authorization?.split(" ")[1];
     if (!token) {
@@ -77,7 +77,7 @@ zrelniyRT.post("/", [ValidateAdmin.check], async (req, res) => {
         _id: { $in: normalizedPrintIds },
       });
 
-      const saved = await zrelniyDB.create({
+      const saved = await finishStretchingDB.create({
         ...data,
         printIds: normalizedPrintIds,
         prints: prints.map((item) => ({
@@ -89,7 +89,7 @@ zrelniyRT.post("/", [ValidateAdmin.check], async (req, res) => {
       });
 
       return res.status(200).json({
-        msg: "Stretch created successfully",
+        msg: "Finish stretching created successfully",
         variant: "success",
         saved,
       });
@@ -103,15 +103,15 @@ zrelniyRT.post("/", [ValidateAdmin.check], async (req, res) => {
   }
 });
 
-zrelniyRT.patch("/:id", async (req, res) => {
+finishStretchingRT.patch("/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const data = req.body;
-    const updated = await zrelniyDB.findByIdAndUpdate(id, data, {
+    const updated = await finishStretchingDB.findByIdAndUpdate(id, data, {
       new: true,
     });
     res.status(200).json({
-      msg: "Zrelniy updated successfully",
+      msg: "Finish stretching updated successfully",
       variant: "success",
       updated,
     });
@@ -124,19 +124,25 @@ zrelniyRT.patch("/:id", async (req, res) => {
   }
 });
 
-zrelniyRT.delete("/:id", async (req, res) => {
+finishStretchingRT.delete("/:id", async (req, res) => {
   try {
     const { id } = req.params;
-    const deleted = await zrelniyDB.findByIdAndDelete(id);
+    const deleted = await finishStretchingDB.findByIdAndDelete(id);
 
     if (!deleted)
       res
         .status(400)
-        .json({ msg: "Zrelniy deleted unsuccessfully", variant: "error" });
+        .json({
+          msg: "Finish stretching deleted unsuccessfully",
+          variant: "error",
+        });
 
     res
       .status(200)
-      .json({ msg: "Zrelniy deleted successfully", variant: "success" });
+      .json({
+        msg: "Finish stretching deleted successfully",
+        variant: "success",
+      });
   } catch (error) {
     res.status(500).json({
       msg: "Something went wrong",
@@ -146,4 +152,4 @@ zrelniyRT.delete("/:id", async (req, res) => {
   }
 });
 
-module.exports = zrelniyRT;
+module.exports = finishStretchingRT;

@@ -1,19 +1,19 @@
 const { Router } = require("express");
-const zrelniyDB = require("../../models/Printing/Zrelniy.js");
+const calanderDB = require("../../models/Printing/Calander.js");
 const printDB = require("../../models/Printing/Print.js");
 const { ValidateAdmin } = require("../../middleware/checkAdmin.js");
 const Users = require("../../models/Users.js");
 const jwt = require("jsonwebtoken");
 
-const zrelniyRT = Router();
+const calanderRT = Router();
 
-zrelniyRT.get("/", async (req, res) => {
+calanderRT.get("/", async (req, res) => {
   try {
-    const zrelniy = await zrelniyDB.find();
+    const data = await calanderDB.find();
     res.status(200).json({
-      msg: "Zrelniy fetched successfully",
+      msg: "Calander fetched successfully",
       variant: "success",
-      zrelniy,
+      data,
     });
   } catch (error) {
     res.status(500).json({
@@ -24,7 +24,7 @@ zrelniyRT.get("/", async (req, res) => {
   }
 });
 
-zrelniyRT.post("/", [ValidateAdmin.check], async (req, res) => {
+calanderRT.post("/", [ValidateAdmin.check], async (req, res) => {
   try {
     const token = req.headers.authorization?.split(" ")[1];
     if (!token) {
@@ -77,7 +77,7 @@ zrelniyRT.post("/", [ValidateAdmin.check], async (req, res) => {
         _id: { $in: normalizedPrintIds },
       });
 
-      const saved = await zrelniyDB.create({
+      const saved = await calanderDB.create({
         ...data,
         printIds: normalizedPrintIds,
         prints: prints.map((item) => ({
@@ -85,11 +85,15 @@ zrelniyRT.post("/", [ValidateAdmin.check], async (req, res) => {
           orderName: item.order.name,
           printed: item.order.printed,
           orderCloth: item.order.cloth,
+          design: {
+            imageUrl: item.design?.imageUrl,
+            article: item.design?.article,
+          },
         })),
       });
 
       return res.status(200).json({
-        msg: "Stretch created successfully",
+        msg: "Calander created successfully",
         variant: "success",
         saved,
       });
@@ -103,15 +107,15 @@ zrelniyRT.post("/", [ValidateAdmin.check], async (req, res) => {
   }
 });
 
-zrelniyRT.patch("/:id", async (req, res) => {
+calanderRT.patch("/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const data = req.body;
-    const updated = await zrelniyDB.findByIdAndUpdate(id, data, {
+    const updated = await calanderDB.findByIdAndUpdate(id, data, {
       new: true,
     });
     res.status(200).json({
-      msg: "Zrelniy updated successfully",
+      msg: "Calander updated successfully",
       variant: "success",
       updated,
     });
@@ -124,19 +128,19 @@ zrelniyRT.patch("/:id", async (req, res) => {
   }
 });
 
-zrelniyRT.delete("/:id", async (req, res) => {
+calanderRT.delete("/:id", async (req, res) => {
   try {
     const { id } = req.params;
-    const deleted = await zrelniyDB.findByIdAndDelete(id);
+    const deleted = await calanderDB.findByIdAndDelete(id);
 
     if (!deleted)
       res
         .status(400)
-        .json({ msg: "Zrelniy deleted unsuccessfully", variant: "error" });
+        .json({ msg: "Calander deleted unsuccessfully", variant: "error" });
 
     res
       .status(200)
-      .json({ msg: "Zrelniy deleted successfully", variant: "success" });
+      .json({ msg: "Calander deleted successfully", variant: "success" });
   } catch (error) {
     res.status(500).json({
       msg: "Something went wrong",
@@ -146,4 +150,4 @@ zrelniyRT.delete("/:id", async (req, res) => {
   }
 });
 
-module.exports = zrelniyRT;
+module.exports = calanderRT;
