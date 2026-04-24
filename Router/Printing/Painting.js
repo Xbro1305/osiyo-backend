@@ -4,6 +4,7 @@ const gazapalDB = require("../../models/Printing/Gazapal.js");
 const { ValidateAdmin } = require("../../middleware/checkAdmin.js");
 const Users = require("../../models/Users.js");
 const jwt = require("jsonwebtoken");
+const XLSX = require("xlsx");
 
 const paintingRT = Router();
 
@@ -98,6 +99,33 @@ paintingRT.patch("/:id", async (req, res) => {
     });
   }
 });
+paintingRT.delete(
+  "/group",
+  [ValidateAdmin.checkSuperAdmin],
+  async (req, res) => {
+    try {
+      const { ids } = req.body;
+      const deleted = await PaintingDB.deleteMany({ _id: { $in: ids } });
+      if (!deleted) {
+        return res.status(400).json({
+          msg: "Painting group deleted unsuccessfully",
+          variant: "error",
+        });
+      }
+      res.status(200).json({
+        msg: "Painting group deleted successfully",
+        variant: "success",
+        deleted,
+      });
+    } catch (error) {
+      return res.status(500).json({
+        msg: "Something went wrong",
+        variant: "error",
+        error: error.message,
+      });
+    }
+  },
+);
 
 paintingRT.delete("/:id", async (req, res) => {
   try {
@@ -120,5 +148,54 @@ paintingRT.delete("/:id", async (req, res) => {
     });
   }
 });
+
+paintingRT.post(
+  "/export",
+  [ValidateAdmin.checkSuperAdmin],
+  async (req, res) => {
+    try {
+      const { ids } = req.body;
+      const painting =
+        Array.isArray(ids) && ids.length > 0
+          ? await PaintingDB.find({ _id: { $in: ids } }).lean()
+          : await PaintingDB.find().lean();
+      if (!painting.length) {
+        return res.status(404).json({
+          msg: "No data found",
+          variant: "warning",
+        });
+      }
+
+      const normalized = painting.map((item) => ({
+        "Painting No.": item.passNo,
+        Sana: item.date,
+        "Mato nomi": item.gazapal.cloth.name,
+        Miqdori: item.gazapal.length,
+        Operator: item.gazapal.user.name,
+        Smena: item.gazapal.user.shift,
+        "Auto number": String(item._id),
+      }));
+      const worksheet = XLSX.utils.json_to_sheet(normalized);
+      const workbook = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(workbook, worksheet, "Bo'yash");
+      const buffer = XLSX.write(workbook, {
+        type: "buffer",
+        bookType: "xlsx",
+      });
+      res.setHeader("Content-Disposition", "attachment; filename=bo'yash.xlsx");
+      res.setHeader(
+        "Content-Type",
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      );
+      return res.send(buffer);
+    } catch (error) {
+      return res.status(500).json({
+        msg: "Something went wrong",
+        variant: "error",
+        error: error.message,
+      });
+    }
+  },
+);
 
 module.exports = paintingRT;

@@ -5,6 +5,7 @@ const { ValidateAdmin } = require("../../middleware/checkAdmin.js");
 const Users = require("../../models/Users.js");
 const jwt = require("jsonwebtoken");
 const DesignsDB = require("../../models/Warehouse/Designs.js");
+const XLSX = require("xlsx");
 
 const printRT = Router();
 
@@ -71,7 +72,7 @@ printRT.post("/", [ValidateAdmin.check], async (req, res) => {
 
       // ✅ НОРМАЛИЗАЦИЯ ID
       const normalizedGazapalIds = gazapalIds.map((item) =>
-        typeof item === "string" ? item : item.id
+        typeof item === "string" ? item : item.id,
       );
 
       const gazapals = await gazapalDB.find({
@@ -126,6 +127,30 @@ printRT.patch("/:id", async (req, res) => {
   }
 });
 
+printRT.delete("/group", [ValidateAdmin.checkSuperAdmin], async (req, res) => {
+  try {
+    const { ids } = req.body;
+    const deleted = await printDB.deleteMany({ _id: { $in: ids } });
+    if (!deleted) {
+      return res.status(400).json({
+        msg: "Print group deleted unsuccessfully",
+        variant: "error",
+      });
+    }
+    res.status(200).json({
+      msg: "Print group deleted successfully",
+      variant: "success",
+      deleted,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      msg: "Something went wrong",
+      variant: "error",
+      error: error.message,
+    });
+  }
+});
+
 printRT.delete("/:id", async (req, res) => {
   try {
     const { id } = req.params;
@@ -141,6 +166,68 @@ printRT.delete("/:id", async (req, res) => {
       .json({ msg: "Printing deleted successfully", variant: "success" });
   } catch (error) {
     res.status(500).json({
+      msg: "Something went wrong",
+      variant: "error",
+      error: error.message,
+    });
+  }
+});
+
+printRT.post("/export", [ValidateAdmin.checkSuperAdmin], async (req, res) => {
+  try {
+    const { ids } = req.body;
+
+    const prints =
+      Array.isArray(ids) && ids.length > 0
+        ? await printDB.find({ _id: { $in: ids } }).lean()
+        : await printDB.find().lean();
+
+    if (!prints.length) {
+      return res.status(404).json({
+        msg: "No data found",
+        variant: "warning",
+      });
+    }
+
+    // 🔥 нормализация данных (убираем вложенные объекты если нужно)
+    const normalized = prints.map((item) => ({
+      "Printing No.": item.passNo,
+      sana: item.date,
+      "Gazapal No.": item.gazapals.map((g) => g.passNo).join(", "),
+      "Mato nomi": item.gazapals.map((g) => g.cloth.name).join(" | "),
+      "Zakaz nomi": item.order.name,
+      "Zakaz mato nomi": item.order.cloth,
+      "des. no.": item.design.article,
+      "des. image url": `api.osiyohometex.uz${item.design.imageUrl}`,
+      "Zakaz metri": item.order.length,
+      Holati: item.order.status == true ? "Tugallangan" : "Jarayonda",
+      "Zakazga qo'shildi %": item.order.stretch,
+      "Auto number": String(item._id),
+    }));
+
+    // создаем worksheet
+    const worksheet = XLSX.utils.json_to_sheet(normalized);
+
+    // создаем workbook
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, "Prints");
+
+    // буфер файла
+    const buffer = XLSX.write(workbook, {
+      type: "buffer",
+      bookType: "xlsx",
+    });
+
+    // отправка файла
+    res.setHeader("Content-Disposition", "attachment; filename=prints.xlsx");
+    res.setHeader(
+      "Content-Type",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    );
+
+    return res.send(buffer);
+  } catch (error) {
+    return res.status(500).json({
       msg: "Something went wrong",
       variant: "error",
       error: error.message,

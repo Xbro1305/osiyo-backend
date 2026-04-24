@@ -4,6 +4,7 @@ const printDB = require("../../models/Printing/Print.js");
 const { ValidateAdmin } = require("../../middleware/checkAdmin.js");
 const Users = require("../../models/Users.js");
 const jwt = require("jsonwebtoken");
+const XLSX = require("xlsx");
 
 const zrelniyRT = Router();
 
@@ -70,7 +71,7 @@ zrelniyRT.post("/", [ValidateAdmin.check], async (req, res) => {
 
       // ✅ НОРМАЛИЗАЦИЯ ID
       const normalizedPrintIds = printIds.map((item) =>
-        typeof item === "string" ? item : item.id
+        typeof item === "string" ? item : item.id,
       );
 
       const prints = await printDB.find({
@@ -123,6 +124,38 @@ zrelniyRT.patch("/:id", async (req, res) => {
     });
   }
 });
+zrelniyRT.delete(
+  "/group",
+  [ValidateAdmin.checkSuperAdmin],
+  async (req, res) => {
+    console.log("ROUTE HIT"); // 👈 вот это
+    try {
+      console.log("BODY:", req.body);
+      const { ids } = req.body;
+
+      console.log("IDS:", ids);
+
+      const deleted = await zrelniyDB.deleteMany({ _id: { $in: ids } });
+      if (!deleted) {
+        return res.status(400).json({
+          msg: "Zrelniy group deleted unsuccessfully",
+          variant: "error",
+        });
+      }
+      res.status(200).json({
+        msg: "Zrelniy group deleted successfully",
+        variant: "success",
+        deleted,
+      });
+    } catch (error) {
+      res.status(500).json({
+        msg: "Something went wrong",
+        variant: "error",
+        error: error.message,
+      });
+    }
+  },
+);
 
 zrelniyRT.delete("/:id", async (req, res) => {
   try {
@@ -139,6 +172,56 @@ zrelniyRT.delete("/:id", async (req, res) => {
       .json({ msg: "Zrelniy deleted successfully", variant: "success" });
   } catch (error) {
     res.status(500).json({
+      msg: "Something went wrong",
+      variant: "error",
+      error: error.message,
+    });
+  }
+});
+
+zrelniyRT.post("/export", [ValidateAdmin.checkSuperAdmin], async (req, res) => {
+  try {
+    const { ids } = req.body;
+    const zrelniy =
+      Array.isArray(ids) && ids.length > 0
+        ? await zrelniyDB.find({ _id: { $in: ids } }).lean()
+        : await zrelniyDB.find().lean();
+    if (!zrelniy.length) {
+      return res.status(404).json({
+        msg: "No data found",
+        variant: "warning",
+      });
+    }
+
+    const normalized = zrelniy.map((item) => ({
+      "Zrelniy No.": item.passNo,
+      Sana: item.date,
+      "Pechat No.": item.prints.map((g) => g.passNo).join(", "),
+      "Zakaz nomi": item.prints.map((g) => g.orderName).join(" | "),
+      "Mato nomi": item.prints.map((g) => g.orderCloth).join(" | "),
+      "Pechat metri": item.prints.map((g) => g.printed).join(" | "),
+      Tezlik: item.speed,
+      Harorat: item.temperature,
+      Holat: item.status == true ? "Tugallangan" : "Jarayonda",
+      Operator: item.user.name,
+      Smena: item.user.shift,
+      "Auto number": String(item._id),
+    }));
+    const worksheet = XLSX.utils.json_to_sheet(normalized);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, "Zrelniy");
+    const buffer = XLSX.write(workbook, {
+      type: "buffer",
+      bookType: "xlsx",
+    });
+    res.setHeader("Content-Disposition", "attachment; filename=zrelniy.xlsx");
+    res.setHeader(
+      "Content-Type",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    );
+    return res.send(buffer);
+  } catch (error) {
+    return res.status(500).json({
       msg: "Something went wrong",
       variant: "error",
       error: error.message,

@@ -4,6 +4,7 @@ const gazapalDB = require("../../models/Printing/Gazapal.js");
 const { ValidateAdmin } = require("../../middleware/checkAdmin.js");
 const Users = require("../../models/Users.js");
 const jwt = require("jsonwebtoken");
+const XLSX = require("xlsx");
 
 const stretchRT = Router();
 
@@ -70,7 +71,7 @@ stretchRT.post("/", [ValidateAdmin.check], async (req, res) => {
 
       // ✅ НОРМАЛИЗАЦИЯ ID
       const normalizedGazapalIds = gazapalIds.map((item) =>
-        typeof item === "string" ? item : item.id
+        typeof item === "string" ? item : item.id,
       );
 
       const gazapals = await gazapalDB.find({
@@ -134,6 +135,85 @@ stretchRT.delete("/:id", async (req, res) => {
       .json({ msg: "Stretch deleted successfully", variant: "success" });
   } catch (error) {
     res.status(500).json({
+      msg: "Something went wrong",
+      variant: "error",
+      error: error.message,
+    });
+  }
+});
+stretchRT.delete(
+  "/group",
+  [ValidateAdmin.checkSuperAdmin],
+  async (req, res) => {
+    try {
+      const { ids } = req.body;
+      const deleted = await stretchDB.deleteMany({ _id: { $in: ids } });
+      if (!deleted) {
+        return res.status(400).json({
+          msg: "Stretch group deleted unsuccessfully",
+          variant: "error",
+        });
+      }
+      res.status(200).json({
+        msg: "Stretch group deleted successfully",
+        variant: "success",
+        deleted,
+      });
+    } catch (error) {
+      return res.status(500).json({
+        msg: "Something went wrong",
+        variant: "error",
+        error: error.message,
+      });
+    }
+  },
+);
+
+stretchRT.post("/export", [ValidateAdmin.checkSuperAdmin], async (req, res) => {
+  try {
+    const { ids } = req.body;
+    const stretches =
+      Array.isArray(ids) && ids.length > 0
+        ? await stretchDB.find({ _id: { $in: ids } }).lean()
+        : await stretchDB.find().lean();
+    if (!stretches.length) {
+      return res.status(404).json({
+        msg: "No data found",
+        variant: "warning",
+      });
+    }
+
+    const normalized = stretches.map((item) => ({
+      "Stretching No.": item.passNo,
+      Sana: item.date,
+      Gazapal: item.gazapals.map((g) => g.passNo).join(", "),
+      "Mato nomi": item.gazapals.map((g) => g.cloth.name).join(" | "),
+      "Xom miqdori": item.gazapals.map((g) => g.length).join(" | "),
+      "Pechat metri": item.length,
+      "Cho'zilish": `${item.stretch}%`,
+      Ishlatildi: item.description,
+      Operator: item.user.name,
+      Smena: item.user.shift,
+      "Auto number": String(item._id),
+    }));
+    const worksheet = XLSX.utils.json_to_sheet(normalized);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, "Stretching");
+    const buffer = XLSX.write(workbook, {
+      type: "buffer",
+      bookType: "xlsx",
+    });
+    res.setHeader(
+      "Content-Disposition",
+      "attachment; filename=stretching.xlsx",
+    );
+    res.setHeader(
+      "Content-Type",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    );
+    return res.send(buffer);
+  } catch (error) {
+    return res.status(500).json({
       msg: "Something went wrong",
       variant: "error",
       error: error.message,

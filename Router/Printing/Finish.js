@@ -4,6 +4,7 @@ const printDB = require("../../models/Printing/Print.js");
 const { ValidateAdmin } = require("../../middleware/checkAdmin.js");
 const Users = require("../../models/Users.js");
 const jwt = require("jsonwebtoken");
+const XLSX = require("xlsx");
 
 const finishRT = Router();
 
@@ -70,7 +71,7 @@ finishRT.post("/", [ValidateAdmin.check], async (req, res) => {
 
       // ✅ НОРМАЛИЗАЦИЯ ID
       const normalizedPrintIds = printIds.map((item) =>
-        typeof item === "string" ? item : item.id
+        typeof item === "string" ? item : item.id,
       );
 
       const prints = await printDB.find({
@@ -128,6 +129,30 @@ finishRT.patch("/:id", async (req, res) => {
   }
 });
 
+finishRT.delete("/group", [ValidateAdmin.checkSuperAdmin], async (req, res) => {
+  try {
+    const { ids } = req.body;
+    const deleted = await finishDB.deleteMany({ _id: { $in: ids } });
+    if (!deleted) {
+      return res.status(400).json({
+        msg: "Finish group deleted unsuccessfully",
+        variant: "error",
+      });
+    }
+    res.status(200).json({
+      msg: "Finish group deleted successfully",
+      variant: "success",
+      deleted,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      msg: "Something went wrong",
+      variant: "error",
+      error: error.message,
+    });
+  }
+});
+
 finishRT.delete("/:id", async (req, res) => {
   try {
     const { id } = req.params;
@@ -143,6 +168,67 @@ finishRT.delete("/:id", async (req, res) => {
       .json({ msg: "Finish deleted successfully", variant: "success" });
   } catch (error) {
     res.status(500).json({
+      msg: "Something went wrong",
+      variant: "error",
+      error: error.message,
+    });
+  }
+});
+
+finishRT.post("/export", [ValidateAdmin.checkSuperAdmin], async (req, res) => {
+  try {
+    const { ids } = req.body;
+
+    const prints =
+      Array.isArray(ids) && ids.length > 0
+        ? await finishDB.find({ _id: { $in: ids } }).lean()
+        : await finishDB.find().lean();
+
+    if (!prints.length) {
+      return res.status(404).json({
+        msg: "No data found",
+        variant: "warning",
+      });
+    }
+
+    // 🔥 нормализация данных (убираем вложенные объекты если нужно)
+    const normalized = prints.map((item) => ({
+      "Pass No.": item.passNo,
+      sana: item.date,
+      "Pechat No.": item.prints.map((g) => g.passNo).join(", "),
+      "Des nums": item.prints.map((g) => g.design?.article).join(" | "),
+      "Zakaz mato nomi": item.prints.map((g) => g?.orderCloth).join(" | "),
+      "Zakaz nomi": item.prints.map((g) => g.orderName).join(" | "),
+      "Zakaz bo'yicha bosildi": item.prints.map((g) => g.printed).join(" | "),
+      Holati: item.status == true ? "Tugallangan" : "Jarayonda",
+      Eni: `${item.width} cм.`,
+      "Finish qilindi": item.finished,
+      "Auto number": String(item._id),
+    }));
+
+    // создаем worksheet
+    const worksheet = XLSX.utils.json_to_sheet(normalized);
+
+    // создаем workbook
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, "Finish");
+
+    // буфер файла
+    const buffer = XLSX.write(workbook, {
+      type: "buffer",
+      bookType: "xlsx",
+    });
+
+    // отправка файла
+    res.setHeader("Content-Disposition", "attachment; filename=finish.xlsx");
+    res.setHeader(
+      "Content-Type",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    );
+
+    return res.send(buffer);
+  } catch (error) {
+    return res.status(500).json({
       msg: "Something went wrong",
       variant: "error",
       error: error.message,

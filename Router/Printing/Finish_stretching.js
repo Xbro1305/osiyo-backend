@@ -4,6 +4,7 @@ const printDB = require("../../models/Printing/Print.js");
 const { ValidateAdmin } = require("../../middleware/checkAdmin.js");
 const Users = require("../../models/Users.js");
 const jwt = require("jsonwebtoken");
+const XLSX = require("xlsx");
 
 const finishStretchingRT = Router();
 
@@ -70,7 +71,7 @@ finishStretchingRT.post("/", [ValidateAdmin.check], async (req, res) => {
 
       // ✅ НОРМАЛИЗАЦИЯ ID
       const normalizedPrintIds = printIds.map((item) =>
-        typeof item === "string" ? item : item.id
+        typeof item === "string" ? item : item.id,
       );
 
       const prints = await printDB.find({
@@ -124,25 +125,51 @@ finishStretchingRT.patch("/:id", async (req, res) => {
   }
 });
 
+finishStretchingRT.delete(
+  "/group",
+  [ValidateAdmin.checkSuperAdmin],
+  async (req, res) => {
+    try {
+      const { ids } = req.body;
+      const deleted = await finishStretchingDB.deleteMany({
+        _id: { $in: ids },
+      });
+      if (!deleted) {
+        return res.status(400).json({
+          msg: "Finish stretching group deleted unsuccessfully",
+          variant: "error",
+        });
+      }
+      res.status(200).json({
+        msg: "Finish stretching group deleted successfully",
+        variant: "success",
+        deleted,
+      });
+    } catch (error) {
+      return res.status(500).json({
+        msg: "Something went wrong",
+        variant: "error",
+        error: error.message,
+      });
+    }
+  },
+);
+
 finishStretchingRT.delete("/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const deleted = await finishStretchingDB.findByIdAndDelete(id);
 
     if (!deleted)
-      res
-        .status(400)
-        .json({
-          msg: "Finish stretching deleted unsuccessfully",
-          variant: "error",
-        });
-
-    res
-      .status(200)
-      .json({
-        msg: "Finish stretching deleted successfully",
-        variant: "success",
+      res.status(400).json({
+        msg: "Finish stretching deleted unsuccessfully",
+        variant: "error",
       });
+
+    res.status(200).json({
+      msg: "Finish stretching deleted successfully",
+      variant: "success",
+    });
   } catch (error) {
     res.status(500).json({
       msg: "Something went wrong",
@@ -151,5 +178,72 @@ finishStretchingRT.delete("/:id", async (req, res) => {
     });
   }
 });
+
+finishStretchingRT.post(
+  "/export",
+  [ValidateAdmin.checkSuperAdmin],
+  async (req, res) => {
+    try {
+      const { ids } = req.body;
+
+      const prints =
+        Array.isArray(ids) && ids.length > 0
+          ? await finishStretchingDB.find({ _id: { $in: ids } }).lean()
+          : await finishStretchingDB.find().lean();
+
+      if (!prints.length) {
+        return res.status(404).json({
+          msg: "No data found",
+          variant: "warning",
+        });
+      }
+
+      // 🔥 нормализация данных (убираем вложенные объекты если нужно)
+      const normalized = prints.map((item) => ({
+        "Stretching No.": item.passNo,
+        sana: item.date,
+        "Pechat No.": item.prints.map((g) => g.passNo).join(", "),
+        "Zakaz mato nomi": item.prints.map((g) => g.orderCloth).join(" | "),
+        "Zakaz nomi": item.prints.map((g) => g.orderName).join(" | "),
+        "Zakaz bo'yicha bosildi": item.prints.map((g) => g.printed).join(" | "),
+        Holati: item.status == true ? "Tugallangan" : "Jarayonda",
+        "Finish qilindi": item.measured,
+        "Cho'zilish %": item.stretched,
+        "Auto number": String(item._id),
+      }));
+
+      // создаем worksheet
+      const worksheet = XLSX.utils.json_to_sheet(normalized);
+
+      // создаем workbook
+      const workbook = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(workbook, worksheet, "Finish cho'zilish");
+
+      // буфер файла
+      const buffer = XLSX.write(workbook, {
+        type: "buffer",
+        bookType: "xlsx",
+      });
+
+      // отправка файла
+      res.setHeader(
+        "Content-Disposition",
+        "attachment; filename=finish_cho'zilish.xlsx",
+      );
+      res.setHeader(
+        "Content-Type",
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      );
+
+      return res.send(buffer);
+    } catch (error) {
+      return res.status(500).json({
+        msg: "Something went wrong",
+        variant: "error",
+        error: error.message,
+      });
+    }
+  },
+);
 
 module.exports = finishStretchingRT;

@@ -4,6 +4,7 @@ const printDB = require("../../models/Printing/Print.js");
 const { ValidateAdmin } = require("../../middleware/checkAdmin.js");
 const Users = require("../../models/Users.js");
 const jwt = require("jsonwebtoken");
+const XLSX = require("xlsx");
 
 const calanderStretchingRT = Router();
 
@@ -70,7 +71,7 @@ calanderStretchingRT.post("/", [ValidateAdmin.check], async (req, res) => {
 
       // ✅ НОРМАЛИЗАЦИЯ ID
       const normalizedPrintIds = printIds.map((item) =>
-        typeof item === "string" ? item : item.id
+        typeof item === "string" ? item : item.id,
       );
 
       const prints = await printDB.find({
@@ -124,6 +125,36 @@ calanderStretchingRT.patch("/:id", async (req, res) => {
   }
 });
 
+calanderStretchingRT.delete(
+  "/group",
+  [ValidateAdmin.checkSuperAdmin],
+  async (req, res) => {
+    try {
+      const { ids } = req.body;
+      const deleted = await calanderStretchingDB.deleteMany({
+        _id: { $in: ids },
+      });
+      if (!deleted) {
+        return res.status(400).json({
+          msg: "Calander stretching group deleted unsuccessfully",
+          variant: "error",
+        });
+      }
+      res.status(200).json({
+        msg: "Calander stretching group deleted successfully",
+        variant: "success",
+        deleted,
+      });
+    } catch (error) {
+      return res.status(500).json({
+        msg: "Something went wrong",
+        variant: "error",
+        error: error.message,
+      });
+    }
+  },
+);
+
 calanderStretchingRT.delete("/:id", async (req, res) => {
   try {
     const { id } = req.params;
@@ -147,5 +178,72 @@ calanderStretchingRT.delete("/:id", async (req, res) => {
     });
   }
 });
+
+calanderStretchingRT.post(
+  "/export",
+  [ValidateAdmin.check],
+  async (req, res) => {
+    try {
+      const { ids } = req.body;
+
+      const prints =
+        Array.isArray(ids) && ids.length > 0
+          ? await calanderStretchingDB.find({ _id: { $in: ids } }).lean()
+          : await calanderStretchingDB.find().lean();
+
+      if (!prints.length) {
+        return res.status(404).json({
+          msg: "No data found",
+          variant: "warning",
+        });
+      }
+
+      // 🔥 нормализация данных (убираем вложенные объекты если нужно)
+      const normalized = prints.map((item) => ({
+        "Stretching No.": item.passNo,
+        sana: item.date,
+        "Pechat No.": item.prints.map((g) => g.passNo).join(", "),
+        "Zakaz mato nomi": item.prints.map((g) => g.orderCloth).join(" | "),
+        "Zakaz nomi": item.prints.map((g) => g.orderName).join(" | "),
+        "Zakaz bo'yicha bosildi": item.prints.map((g) => g.printed).join(" | "),
+        Holati: item.status == true ? "Tugallangan" : "Jarayonda",
+        "Calander qilindi": item.measured,
+        "Cho'zilish %": item.stretched,
+        "Auto number": String(item._id),
+      }));
+
+      // создаем worksheet
+      const worksheet = XLSX.utils.json_to_sheet(normalized);
+
+      // создаем workbook
+      const workbook = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(workbook, worksheet, "Calander cho'zilish");
+
+      // буфер файла
+      const buffer = XLSX.write(workbook, {
+        type: "buffer",
+        bookType: "xlsx",
+      });
+
+      // отправка файла
+      res.setHeader(
+        "Content-Disposition",
+        "attachment; filename=calander_cho'zilish.xlsx",
+      );
+      res.setHeader(
+        "Content-Type",
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      );
+
+      return res.send(buffer);
+    } catch (error) {
+      return res.status(500).json({
+        msg: "Something went wrong",
+        variant: "error",
+        error: error.message,
+      });
+    }
+  },
+);
 
 module.exports = calanderStretchingRT;
