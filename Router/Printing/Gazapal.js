@@ -182,4 +182,81 @@ gazapalRT.post("/export", [ValidateAdmin.checkSuperAdmin], async (req, res) => {
   }
 });
 
+gazapalRT.get("/group", async (req, res) => {
+  try {
+    // пример: /gazapal/group?keys=cloth.name,user.shift,date
+    const { keys } = req.query;
+
+    if (!keys) {
+      return res.status(400).json({
+        msg: "keys query is required",
+        variant: "warning",
+      });
+    }
+
+    const allowedKeys = [
+      "passNo",
+      "date",
+      "cloth.id",
+      "cloth.name",
+      "length",
+      "user.id",
+      "user.name",
+      "user.role",
+      "user.shift",
+    ];
+
+    const groupKeys = keys
+      .split(",")
+      .map((key) => key.trim())
+      .filter(Boolean);
+
+    const invalidKeys = groupKeys.filter((key) => !allowedKeys.includes(key));
+
+    if (invalidKeys.length) {
+      return res.status(400).json({
+        msg: "Invalid group keys",
+        variant: "warning",
+        invalidKeys,
+      });
+    }
+
+    const _id = {};
+
+    groupKeys.forEach((key) => {
+      // "cloth.name" -> поле в _id будет "cloth_name"
+      _id[key.replace(/\./g, "_")] = `$${key}`;
+    });
+
+    const grouped = await gazapalDB.aggregate([
+      {
+        $group: {
+          _id,
+          totalLength: { $sum: "$length" },
+          count: { $sum: 1 },
+          items: { $push: "$$ROOT" },
+        },
+      },
+      {
+        $sort: {
+          count: -1,
+        },
+      },
+    ]);
+
+    res.status(200).json({
+      msg: "Gazapal grouped successfully",
+      variant: "success",
+      keys: groupKeys,
+      grouped,
+    });
+  } catch (error) {
+    res.status(500).json({
+      msg: "Something went wrong",
+      variant: "error",
+      error: error.message,
+    });
+  }
+});
+
 module.exports = gazapalRT;
