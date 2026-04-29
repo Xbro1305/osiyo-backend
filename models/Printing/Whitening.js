@@ -30,7 +30,7 @@ const WhiteningSchema = new Schema(
       },
     },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 const whiteningDB = model("whitening", WhiteningSchema);

@@ -169,6 +169,172 @@ stretchRT.delete(
   },
 );
 
+stretchRT.get("/group", async (req, res) => {
+  try {
+    const { keys } = req.query;
+
+    if (!keys) {
+      return res.status(400).json({
+        msg: "keys query is required",
+        variant: "warning",
+      });
+    }
+
+    const allowedKeys = [
+      "passNo",
+      "date",
+      "length",
+      "stretch",
+      "description",
+      "totalLength",
+      "user.id",
+      "user.name",
+      "user.role",
+      "user.shift",
+      "gazapals.passNo",
+      "gazapals.date",
+      "gazapals.length",
+      "gazapals.cloth.id",
+      "gazapals.cloth.name",
+      "gazapals.user.id",
+      "gazapals.user.name",
+      "gazapals.user.role",
+      "gazapals.user.shift",
+    ];
+
+    const groupKeys = keys
+      .split(",")
+      .map((key) => key.trim())
+      .filter(Boolean);
+
+    const invalidKeys = groupKeys.filter((key) => !allowedKeys.includes(key));
+
+    if (invalidKeys.length) {
+      return res.status(400).json({
+        msg: "Invalid group keys",
+        variant: "warning",
+        invalidKeys,
+      });
+    }
+
+    const hasGazapalsKey = groupKeys.some((key) => key.startsWith("gazapals."));
+
+    const _id = {};
+
+    groupKeys.forEach((key) => {
+      _id[key.replace(/\./g, "_")] = `$${key}`;
+    });
+
+    const pipeline = [
+      {
+        $addFields: {
+          originalDoc: "$$ROOT",
+        },
+      },
+    ];
+
+    if (hasGazapalsKey) {
+      pipeline.push({
+        $unwind: {
+          path: "$gazapals",
+          preserveNullAndEmptyArrays: true,
+        },
+      });
+    }
+
+    pipeline.push(
+      {
+        $group: {
+          _id,
+          count: { $sum: 1 },
+          totalGazapalLength: {
+            $sum: {
+              $cond: [
+                hasGazapalsKey,
+                {
+                  $convert: {
+                    input: "$gazapals.length",
+                    to: "double",
+                    onError: 0,
+                    onNull: 0,
+                  },
+                },
+                {
+                  $sum: {
+                    $map: {
+                      input: "$gazapals",
+                      as: "gazapal",
+                      in: {
+                        $convert: {
+                          input: "$$gazapal.length",
+                          to: "double",
+                          onError: 0,
+                          onNull: 0,
+                        },
+                      },
+                    },
+                  },
+                },
+              ],
+            },
+          },
+          totalLengthSum: {
+            $sum: {
+              $convert: {
+                input: "$length",
+                to: "double",
+                onError: 0,
+                onNull: 0,
+              },
+            },
+          },
+          totalStretchSum: {
+            $sum: {
+              $convert: {
+                input: "$stretch",
+                to: "double",
+                onError: 0,
+                onNull: 0,
+              },
+            },
+          },
+          totalLengthFieldSum: {
+            $sum: {
+              $convert: {
+                input: "$totalLength",
+                to: "double",
+                onError: 0,
+                onNull: 0,
+              },
+            },
+          },
+          items: { $addToSet: "$originalDoc" },
+        },
+      },
+      {
+        $sort: {
+          count: -1,
+        },
+      },
+    );
+
+    const grouped = await stretchDB.aggregate(pipeline);
+
+    return res.status(200).json({
+      msg: "Stretch grouped successfully",
+      variant: "success",
+      keys: groupKeys,
+      grouped,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      msg: "Something went wrong",
+      variant: "error",
+      error: error.message,
+    });
+  }
+});
+
 stretchRT.post("/export", [ValidateAdmin.checkSuperAdmin], async (req, res) => {
   try {
     const { ids } = req.body;

@@ -125,6 +125,119 @@ ramRT.delete("/group", [ValidateAdmin.checkSuperAdmin], async (req, res) => {
   }
 });
 
+ramRT.get("/group", async (req, res) => {
+  try {
+    const { keys } = req.query;
+
+    if (!keys) {
+      return res.status(400).json({
+        msg: "keys query is required",
+        variant: "warning",
+      });
+    }
+
+    const allowedKeys = [
+      "passNo",
+      "date",
+      "length",
+      "stretching",
+      "user.id",
+      "user.name",
+      "user.role",
+      "user.shift",
+      "gazapalId",
+      "gazapal.passNo",
+      "gazapal.date",
+      "gazapal.length",
+      "gazapal.cloth.id",
+      "gazapal.cloth.name",
+      "gazapal.user.id",
+      "gazapal.user.name",
+      "gazapal.user.role",
+      "gazapal.user.shift",
+    ];
+
+    const groupKeys = keys
+      .split(",")
+      .map((key) => key.trim())
+      .filter(Boolean);
+
+    const invalidKeys = groupKeys.filter((key) => !allowedKeys.includes(key));
+
+    if (invalidKeys.length) {
+      return res.status(400).json({
+        msg: "Invalid group keys",
+        variant: "warning",
+        invalidKeys,
+      });
+    }
+
+    const _id = {};
+
+    groupKeys.forEach((key) => {
+      _id[key.replace(/\./g, "_")] = `$${key}`;
+    });
+
+    const grouped = await ramDB.aggregate([
+      {
+        $group: {
+          _id,
+          count: { $sum: 1 },
+          totalGazapalLength: {
+            $sum: {
+              $convert: {
+                input: "$gazapal.length",
+                to: "double",
+                onError: 0,
+                onNull: 0,
+              },
+            },
+          },
+          totalLength: {
+            $sum: {
+              $convert: {
+                input: "$length",
+                to: "double",
+                onError: 0,
+                onNull: 0,
+              },
+            },
+          },
+          totalStretching: {
+            $sum: {
+              $convert: {
+                input: "$stretching",
+                to: "double",
+                onError: 0,
+                onNull: 0,
+              },
+            },
+          },
+          items: { $push: "$$ROOT" },
+        },
+      },
+      {
+        $sort: {
+          count: -1,
+        },
+      },
+    ]);
+
+    return res.status(200).json({
+      msg: "Ram grouped successfully",
+      variant: "success",
+      keys: groupKeys,
+      grouped,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      msg: "Something went wrong",
+      variant: "error",
+      error: error.message,
+    });
+  }
+});
+
 ramRT.delete("/:id", async (req, res) => {
   try {
     const { id } = req.params;

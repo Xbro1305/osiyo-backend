@@ -154,6 +154,155 @@ finishStretchingRT.delete(
     }
   },
 );
+finishStretchingRT.get("/group", async (req, res) => {
+  try {
+    const { keys } = req.query;
+
+    if (!keys) {
+      return res.status(400).json({
+        msg: "keys query is required",
+        variant: "warning",
+      });
+    }
+
+    const allowedKeys = [
+      "passNo",
+      "date",
+      "measured",
+      "stretched",
+      "status",
+      "user.id",
+      "user.name",
+      "user.role",
+      "user.shift",
+      "prints.passNo",
+      "prints.orderName",
+      "prints.printed",
+      "prints.orderCloth",
+    ];
+
+    const groupKeys = keys
+      .split(",")
+      .map((key) => key.trim())
+      .filter(Boolean);
+
+    const invalidKeys = groupKeys.filter((key) => !allowedKeys.includes(key));
+
+    if (invalidKeys.length) {
+      return res.status(400).json({
+        msg: "Invalid group keys",
+        variant: "warning",
+        invalidKeys,
+      });
+    }
+
+    const hasPrintsKey = groupKeys.some((key) => key.startsWith("prints."));
+
+    const _id = {};
+
+    groupKeys.forEach((key) => {
+      _id[key.replace(/\./g, "_")] = `$${key}`;
+    });
+
+    const pipeline = [
+      {
+        $addFields: {
+          originalDoc: "$$ROOT",
+        },
+      },
+    ];
+
+    if (hasPrintsKey) {
+      pipeline.push({
+        $unwind: {
+          path: "$prints",
+          preserveNullAndEmptyArrays: true,
+        },
+      });
+    }
+
+    pipeline.push(
+      {
+        $group: {
+          _id,
+          count: { $sum: 1 },
+          totalMeasured: {
+            $sum: {
+              $convert: {
+                input: "$measured",
+                to: "double",
+                onError: 0,
+                onNull: 0,
+              },
+            },
+          },
+          totalStretched: {
+            $sum: {
+              $convert: {
+                input: "$stretched",
+                to: "double",
+                onError: 0,
+                onNull: 0,
+              },
+            },
+          },
+          totalPrintedMeters: {
+            $sum: {
+              $cond: [
+                hasPrintsKey,
+                {
+                  $convert: {
+                    input: "$prints.printed",
+                    to: "double",
+                    onError: 0,
+                    onNull: 0,
+                  },
+                },
+                {
+                  $sum: {
+                    $map: {
+                      input: "$prints",
+                      as: "print",
+                      in: {
+                        $convert: {
+                          input: "$$print.printed",
+                          to: "double",
+                          onError: 0,
+                          onNull: 0,
+                        },
+                      },
+                    },
+                  },
+                },
+              ],
+            },
+          },
+          items: { $addToSet: "$originalDoc" },
+        },
+      },
+      {
+        $sort: {
+          count: -1,
+        },
+      },
+    );
+
+    const grouped = await finishStretchingDB.aggregate(pipeline);
+
+    return res.status(200).json({
+      msg: "Finish stretching grouped successfully",
+      variant: "success",
+      keys: groupKeys,
+      grouped,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      msg: "Something went wrong",
+      variant: "error",
+      error: error.message,
+    });
+  }
+});
 
 finishStretchingRT.delete("/:id", async (req, res) => {
   try {

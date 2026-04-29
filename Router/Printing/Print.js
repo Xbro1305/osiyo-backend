@@ -26,6 +26,174 @@ printRT.get("/", async (req, res) => {
   }
 });
 
+printRT.get("/group", async (req, res) => {
+  try {
+    const { keys } = req.query;
+
+    if (!keys) {
+      return res.status(400).json({
+        msg: "keys query is required",
+        variant: "warning",
+      });
+    }
+
+    const allowedKeys = [
+      "passNo",
+      "date",
+      "designArt",
+      "design.article",
+      "order.name",
+      "order.cloth",
+      "order.length",
+      "order.printed",
+      "order.stretch",
+      "order.status",
+      "user.id",
+      "user.name",
+      "user.role",
+      "user.shift",
+      "gazapals.passNo",
+      "gazapals.length",
+      "gazapals.date",
+      "gazapals.cloth.id",
+      "gazapals.cloth.name",
+      "gazapals.user.name",
+      "gazapals.user.shift",
+    ];
+
+    const groupKeys = keys
+      .split(",")
+      .map((key) => key.trim())
+      .filter(Boolean);
+
+    const invalidKeys = groupKeys.filter((key) => !allowedKeys.includes(key));
+
+    if (invalidKeys.length) {
+      return res.status(400).json({
+        msg: "Invalid group keys",
+        variant: "warning",
+        invalidKeys,
+      });
+    }
+
+    const hasGazapalsKey = groupKeys.some((key) => key.startsWith("gazapals."));
+
+    const _id = {};
+
+    groupKeys.forEach((key) => {
+      _id[key.replace(/\./g, "_")] = `$${key}`;
+    });
+
+    const pipeline = [
+      {
+        $addFields: {
+          originalDoc: "$$ROOT",
+        },
+      },
+    ];
+
+    if (hasGazapalsKey) {
+      pipeline.push({
+        $unwind: {
+          path: "$gazapals",
+          preserveNullAndEmptyArrays: true,
+        },
+      });
+    }
+
+    pipeline.push(
+      {
+        $group: {
+          _id,
+          count: { $sum: 1 },
+          totalOrderLength: {
+            $sum: {
+              $convert: {
+                input: "$order.length",
+                to: "double",
+                onError: 0,
+                onNull: 0,
+              },
+            },
+          },
+          totalPrinted: {
+            $sum: {
+              $convert: {
+                input: "$order.printed",
+                to: "double",
+                onError: 0,
+                onNull: 0,
+              },
+            },
+          },
+          totalStretch: {
+            $sum: {
+              $convert: {
+                input: "$order.stretch",
+                to: "double",
+                onError: 0,
+                onNull: 0,
+              },
+            },
+          },
+          totalGazapalLength: {
+            $sum: {
+              $cond: [
+                hasGazapalsKey,
+                {
+                  $convert: {
+                    input: "$gazapals.length",
+                    to: "double",
+                    onError: 0,
+                    onNull: 0,
+                  },
+                },
+                {
+                  $sum: {
+                    $map: {
+                      input: "$gazapals",
+                      as: "gazapal",
+                      in: {
+                        $convert: {
+                          input: "$$gazapal.length",
+                          to: "double",
+                          onError: 0,
+                          onNull: 0,
+                        },
+                      },
+                    },
+                  },
+                },
+              ],
+            },
+          },
+          items: { $addToSet: "$originalDoc" },
+        },
+      },
+      {
+        $sort: {
+          count: -1,
+        },
+      },
+    );
+
+    const grouped = await printDB.aggregate(pipeline);
+
+    res.status(200).json({
+      msg: "Prints grouped successfully",
+      variant: "success",
+      keys: groupKeys,
+      grouped,
+    });
+  } catch (error) {
+    res.status(500).json({
+      msg: "Something went wrong",
+      variant: "error",
+      error: error.message,
+    });
+  }
+});
+
 printRT.post("/", [ValidateAdmin.check], async (req, res) => {
   try {
     const token = req.headers.authorization?.split(" ")[1];
@@ -70,7 +238,6 @@ printRT.post("/", [ValidateAdmin.check], async (req, res) => {
       const data = req.body;
       const { gazapalIds = [] } = data;
 
-      // ✅ НОРМАЛИЗАЦИЯ ID
       const normalizedGazapalIds = gazapalIds.map((item) =>
         typeof item === "string" ? item : item.id,
       );
@@ -79,16 +246,25 @@ printRT.post("/", [ValidateAdmin.check], async (req, res) => {
         _id: { $in: normalizedGazapalIds },
       });
 
-      const design = await DesignsDB.find({
+      const design = await DesignsDB.findOne({
         article: req.body.designArt,
       });
-      console.log(design[0], req.body.designArt);
+
+      if (!design) {
+        return res.status(404).json({
+          msg: "Design topilmadi",
+          variant: "warning",
+        });
+      }
 
       const saved = await printDB.create({
         ...data,
         gazapalIds: normalizedGazapalIds,
         gazapals,
-        design: { article: design[0].article, imageUrl: design[0].image },
+        design: {
+          article: design.article,
+          imageUrl: design.image,
+        },
       });
 
       return res.status(200).json({
@@ -113,6 +289,7 @@ printRT.patch("/:id", async (req, res) => {
     const updated = await printDB.findByIdAndUpdate(id, data, {
       new: true,
     });
+
     res.status(200).json({
       msg: "Printing updated successfully",
       variant: "success",
@@ -131,12 +308,14 @@ printRT.delete("/group", [ValidateAdmin.checkSuperAdmin], async (req, res) => {
   try {
     const { ids } = req.body;
     const deleted = await printDB.deleteMany({ _id: { $in: ids } });
+
     if (!deleted) {
       return res.status(400).json({
         msg: "Print group deleted unsuccessfully",
         variant: "error",
       });
     }
+
     res.status(200).json({
       msg: "Print group deleted successfully",
       variant: "success",
@@ -156,14 +335,17 @@ printRT.delete("/:id", async (req, res) => {
     const { id } = req.params;
     const deleted = await printDB.findByIdAndDelete(id);
 
-    if (!deleted)
-      res
-        .status(400)
-        .json({ msg: "Printing deleted unsuccessfully", variant: "error" });
+    if (!deleted) {
+      return res.status(400).json({
+        msg: "Printing deleted unsuccessfully",
+        variant: "error",
+      });
+    }
 
-    res
-      .status(200)
-      .json({ msg: "Printing deleted successfully", variant: "success" });
+    res.status(200).json({
+      msg: "Printing deleted successfully",
+      variant: "success",
+    });
   } catch (error) {
     res.status(500).json({
       msg: "Something went wrong",
@@ -189,7 +371,6 @@ printRT.post("/export", [ValidateAdmin.checkSuperAdmin], async (req, res) => {
       });
     }
 
-    // 🔥 нормализация данных (убираем вложенные объекты если нужно)
     const normalized = prints.map((item) => ({
       "Printing No.": item.passNo,
       sana: item.date,
@@ -200,25 +381,21 @@ printRT.post("/export", [ValidateAdmin.checkSuperAdmin], async (req, res) => {
       "des. no.": item.design.article,
       "des. image url": `api.osiyohometex.uz${item.design.imageUrl}`,
       "Zakaz metri": item.order.length,
+      Bosildi: item.order.printed,
       Holati: item.order.status == true ? "Tugallangan" : "Jarayonda",
       "Zakazga qo'shildi %": item.order.stretch,
       "Auto number": String(item._id),
     }));
 
-    // создаем worksheet
     const worksheet = XLSX.utils.json_to_sheet(normalized);
-
-    // создаем workbook
     const workbook = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(workbook, worksheet, "Prints");
 
-    // буфер файла
     const buffer = XLSX.write(workbook, {
       type: "buffer",
       bookType: "xlsx",
     });
 
-    // отправка файла
     res.setHeader("Content-Disposition", "attachment; filename=prints.xlsx");
     res.setHeader(
       "Content-Type",
