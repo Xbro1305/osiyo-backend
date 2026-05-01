@@ -135,6 +135,23 @@ rt.get("/getme", async (req, res) => {
   }
 });
 
+rt.get("/", [ValidateAdmin.checkSuperAdmin], async (req, res) => {
+  try {
+    const users = await Users.find();
+    res.status(200).json({
+      msg: "Users fetched successfully",
+      variant: "success",
+      users,
+    });
+  } catch (err) {
+    res.status(500).json({
+      msg: "Something went wrong",
+      variant: "error",
+      err,
+    });
+  }
+});
+
 rt.delete("/delete/:id", [ValidateAdmin.check], async (req, res) => {
   try {
     const id = req.params.id;
